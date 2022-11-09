@@ -1,0 +1,18 @@
+{
+	"recommendations": [
+		"aaron-bond.better-comments",
+		"dbaeumer.vscode-eslint",
+		"GitHub.codespaces",
+		"GitHub.vscode-pull-request-github",
+		"GraphQL.vscode-graphql",
+		"GraphQL.vscode-graphql-syntax",
+		"ecmel.vscode-html-css",
+		"ms-vscode.vscode-typescript-next",
+		"christian-kohler.path-intellisense",
+		"ms-vscode.powershell",
+		"bradlc.vscode-tailwindcss",
+		"Vue.volar",
+		"Vue.vscode-typescript-vue-plugin",
+		"hollowtree.vue-snippets"
+  ]
+}
