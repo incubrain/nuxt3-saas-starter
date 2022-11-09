@@ -13,6 +13,7 @@
 		"bradlc.vscode-tailwindcss",
 		"Vue.volar",
 		"Vue.vscode-typescript-vue-plugin",
+		"sdras.vue-vscode-snippets",
 		"hollowtree.vue-snippets"
   ]
 }

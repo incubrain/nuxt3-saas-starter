@@ -1,7 +1,9 @@
 <template>
   <div>
-    <AppHeader />
-    <slot />
-    <AppFooter />
+    <AppNav />
   </div>
 </template>
+
+<script>
+
+</script>

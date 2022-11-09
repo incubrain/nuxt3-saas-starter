@@ -6,12 +6,15 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "storybook": "npx storybook"
+    "storybook": "storybook"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.1.3",
     "nuxt": "3.0.0-rc.13"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.4",
+    "@heroicons/vue": "^2.0.13",
     "cypress": "^11.0.0"
   }
 }

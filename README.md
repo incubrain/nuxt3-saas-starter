@@ -6,10 +6,16 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 [x] Nuxt 3 & Vue 3
 [x] Tailwind 3
+[x] [TailwindUI](https://tailwindui.com/documentation)
+[x] [Tailwind UI Kit (Premium)](https://app.tailwinduikit.com/listing/webapp/master_layout/boxed_layout)
+[x] Recommended VS Code Extensions
+  [x] one
+  [x] two
+  [x] three
+  
 
 ## To-do
 
-[x] Recommended VS Code Extensions
 [] [Storybook 6.5](https://storybook.js.org/docs/vue/writing-stories/introduction)
 [] [Cypress Setup](https://www.cypress.io/)
 [] [TS Config](https://www.cypress.io/)
