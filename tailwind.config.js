@@ -9,13 +9,12 @@ module.exports = {
   ],
   mode: 'jit',
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [
     require('@tailwindcss/typography'),
     // https://tailwindcss.com/docs/typography-plugin
     require('@tailwindcss/forms')
     // https://github.com/tailwindlabs/tailwindcss-forms
-  ],
+  ]
 }
-

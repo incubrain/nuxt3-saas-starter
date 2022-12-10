@@ -15,7 +15,11 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
   - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [Recommended VS Code Extensions]
-- [Wakatime:](https://wakatime.com/) For tracking time spent on projects
+- [Wakatime:](https://wakatime.com/) For tracking time spent on projects 
+<!-- 
+(If you’re not prompted, press F1 or ⌘ + Shift + P then type WakaTime API Key.)
+Your coding stats are visible in your WakaTime dashboard: https://wakatime.com/dashboard
+ -->
   
 
 ## To-do
