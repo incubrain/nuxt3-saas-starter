@@ -2,18 +2,20 @@
 	"recommendations": [
 		"aaron-bond.better-comments",
 		"dbaeumer.vscode-eslint",
-		"GitHub.codespaces",
-		"GitHub.vscode-pull-request-github",
-		"GraphQL.vscode-graphql",
-		"GraphQL.vscode-graphql-syntax",
+		"github.codespaces",
+		"github.vscode-pull-request-github",
+		"graphql.vscode-graphql",
+		"graphql.vscode-graphql-syntax",
 		"ecmel.vscode-html-css",
 		"ms-vscode.vscode-typescript-next",
 		"christian-kohler.path-intellisense",
 		"ms-vscode.powershell",
 		"bradlc.vscode-tailwindcss",
-		"Vue.volar",
-		"Vue.vscode-typescript-vue-plugin",
+		"vue.volar",
+		"vue.vscode-typescript-vue-plugin",
 		"sdras.vue-vscode-snippets",
-		"hollowtree.vue-snippets"
+		"hollowtree.vue-snippets",
+		"nuxt.mdc",
+		"wakatime.vscode-wakatime"
   ]
 }

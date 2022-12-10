@@ -6,14 +6,23 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "storybook": "storybook"
+    "storybook": "storybook",
+    "lint": "eslint . --ext .ts,.js,.vue",
+    "lint:fix": "eslint . --ext .ts,.js,.vue --fix"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.2.2",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/tailwindcss": "^6.1.3",
-    "nuxt": "3.0.0-rc.13"
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.8",
+    "@typescript-eslint/parser": "^5.46.0",
+    "eslint": "^8.29.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "nuxt": "3.0.0-rc.13",
+    "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.4",
     "@heroicons/vue": "^2.0.13",
     "cypress": "^11.0.0"
   }
