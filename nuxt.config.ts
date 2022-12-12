@@ -7,16 +7,25 @@ export default defineNuxtConfig({
       // link: [
       //   { rel: 'stylesheet', href: '' }
       // ],
-      // script: [
-      //   { src: '' }
-      // ]
+      script: [
+        // Insert your Google Tag Manager Script here
+        // { src: '-', async: true, type: 'text/partytown' },
+        { src: 'https://js.stripe.com/v3/', async: true, type: 'text/partytown' },
+        { src: 'https://connect.facebook.net/en_US/sdk.js', async: true, type: 'text/partytown' }
+      ]
     }
   },
   css: ['/assets/main.css'],
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/partytown',
+    '@nuxtjs/color-mode'
   ],
+  partytown: {
+    // For google analytics
+    forward: ['dataLayer.push'],
+  },
   runtimeConfig: {
     // The private keys which are only available within server-side
     apiSecret: '123',
