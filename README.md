@@ -1,4 +1,4 @@
-# Mac's Nuxt 3 Starter
+# Mac's Nuxt 3 Starter (WIP)
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
