@@ -16,6 +16,9 @@ export default defineNuxtConfig({
     }
   },
   css: ['/assets/main.css'],
+  nitro: {
+    preset: 'render-com',
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
