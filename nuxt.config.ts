@@ -20,7 +20,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@nuxtjs/partytown',
-    '@nuxtjs/color-mode'
+    'nuxt-icon',
+    // https://icones.js.org/
+    '@nuxtjs/color-mode',
+    '@nuxt/image-edge'
   ],
   partytown: {
     // For google analytics
