@@ -30,8 +30,6 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 (If you’re not prompted, press F1 or ⌘ + Shift + P then type WakaTime API Key.)
 Your coding stats are visible in your WakaTime dashboard: https://wakatime.com/dashboard
  -->
-- [Historie:](https://histoire.dev/) For developing components in isolation (Storybook alternative)
-  - [@histoire/plugin-nuxt](https://github.com/histoire-dev/histoire/tree/main/packages/histoire-plugin-nuxt)
   
 
 ## To-do

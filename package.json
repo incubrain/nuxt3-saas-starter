@@ -8,13 +8,9 @@
     "postinstall": "nuxt prepare",
     "storybook": "storybook",
     "lint": "eslint . --ext .ts,.js,.vue",
-    "lint:fix": "eslint . --ext .ts,.js,.vue --fix",
-    "story:dev": "histoire dev",
-    "story:build": "histoire build",
-    "story:preview": "histoire preview"
+    "lint:fix": "eslint . --ext .ts,.js,.vue --fix"
   },
   "devDependencies": {
-    "@histoire/plugin-nuxt": "^0.11.9",
     "@nuxt/content": "^2.2.2",
     "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "^3.2.0",
@@ -26,7 +22,6 @@
     "@typescript-eslint/parser": "^5.46.0",
     "eslint": "^8.29.0",
     "eslint-plugin-vue": "^9.8.0",
-    "histoire": "^0.11.9",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.8",
     "typescript": "^4.9.4"
@@ -36,6 +31,6 @@
     "cypress": "^11.0.0"
   },
   "engines": {
-  "node": "v16.14.2"
-}
+    "node": "v16.14.2"
+  }
 }
