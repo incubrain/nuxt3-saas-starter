@@ -40,7 +40,8 @@ export default defineNuxtConfig({
     }
   },
   typescript: {
-    shim: false
+    shim: false,
+    typeCheck: true,
   },
   build: {
     transpile: ['']
