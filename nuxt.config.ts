@@ -15,6 +15,9 @@ export default defineNuxtConfig({
     }
   },
   css: ['/assets/main.css'],
+  imports: {
+    dirs: ['stores'],
+  },
   typescript: {
     shim: false,
     tsConfig: {
@@ -35,7 +38,13 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     // https://icones.js.org/
     '@nuxtjs/color-mode',
-    '@nuxt/image-edge'
+    '@nuxt/image-edge',
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', 'acceptHMRUpdate'],
+      },
+    ],
   ],
   partytown: {
     // For google analytics

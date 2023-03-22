@@ -15,11 +15,14 @@
         <option value="sepia">Sepia</option>
       </select>
     </div>
+    <h3>Name From Pinia State: {{ user.user.name }}</h3>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+
 const colorMode = useColorMode()
+const user = useUserStore()
 console.log(colorMode.preference)
 </script>
 
