@@ -1,0 +1,1 @@
+// auto-generated when you run 'npm run supabase:types'
