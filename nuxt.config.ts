@@ -15,6 +15,15 @@ export default defineNuxtConfig({
     }
   },
   css: ['/assets/main.css'],
+  typescript: {
+    shim: false,
+    tsConfig: {
+      exclude: ['node_modules', 'dist'],
+      compilerOptions: {
+        strict: true,
+      },
+    },
+  },
   nitro: {
     preset: 'render-com',
   },
@@ -23,6 +32,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/partytown',
     'nuxt-icon',
+    '@nuxt/devtools',
     // https://icones.js.org/
     '@nuxtjs/color-mode',
     '@nuxt/image-edge'
@@ -38,10 +48,6 @@ export default defineNuxtConfig({
     public: {
       apiBase: '/api'
     }
-  },
-  typescript: {
-    shim: false,
-    typeCheck: true,
   },
   build: {
     transpile: ['']
