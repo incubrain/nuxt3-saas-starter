@@ -9,18 +9,19 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
   - [@nuxtjs/color-mode:](https://color-mode.nuxtjs.org/) easy light/dark mode
   - [@nuxtjs/partytown:](https://github.com/nuxt-modules/partytown) extract blocking JS to a separate thread
   - [@nuxt/image-edge:](https://v1.image.nuxtjs.org/get-started/) Optimize images to improve SEO
-  <!-- need to add usage of this -->
+  <!-- !todo replace with supabase-js, less likely to have breaking changes over time -->
+  - [@nuxt/supabase:](https://supabase.nuxtjs.org/get-started) for authentication, database, and storage 
+  - [@nuxt/devtools:](https://devtools.nuxtjs.org/guide) for improved debugging and project scope
+  - [@pinia/nuxt:](https://pinia.vuejs.org/ssr/nuxt.html) for state management
   - [nuxt-icon:](https://icones.js.org/) Access to 100k free icons, view [here](https://icones.js.org/)
-  <!-- need to add usage of this -->
-  <!-- need to add usage of this -->
 - TypeScript
 - Formatting
   - [Prettier:](https://prettier.io/) For formatting code
   - [EditorConfig:](https://editorconfig.org/) For consistent coding styles between different editors
-- [Eslint:]()
+  - [Eslint:]()
   - [@nuxtjs/eslint-config-typescript]()
-    [@typescript-eslint/parser:]()
-    [eslint-plugin-vue:]()
+  - [@typescript-eslint/parser:]()
+  - [eslint-plugin-vue:]()
 - Tailwind 3
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
   - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
@@ -35,7 +36,6 @@ Your coding stats are visible in your WakaTime dashboard: https://wakatime.com/d
 ## To-do
 
 - [ ] [Cypress Setup](https://www.cypress.io/)
-- [ ] [TS Config](https://www.cypress.io/)
 - [ ] Composable Demo
 - [ ] Middleware Demo
 - [ ] Auth Demo
