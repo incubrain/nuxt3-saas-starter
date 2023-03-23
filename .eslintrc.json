@@ -28,6 +28,7 @@
         "object-curly-newline": "off",
         "curly": "off",
         "no-undef": "off",
-        "space-before-function-paren": "off"
+        "space-before-function-paren": "off",
+        "arrow-parens": "off"
     }
 }

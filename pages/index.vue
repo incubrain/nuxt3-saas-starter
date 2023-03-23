@@ -15,26 +15,16 @@
         <option value="sepia">Sepia</option>
       </select>
     </div>
-    <h3>Name From Pinia State: {{ user.given_name }} {{ user.surname }}</h3>
-    <h3>Users from supabase {{ users }}</h3>
+    <h3>Users from supabase {{ u.users }}</h3>
   </div>
 </template>
 
 <script setup lang="ts">
 
-import { User } from '@/types'
-
 // const colorMode = useColorMode()
 
-const user: User = useUserStore().user
-
-const client = useSupabaseClient()
-
-const { data: users } = await useAsyncData('users', async () => {
-  const { data } = await client.from('users').select('id, given_name, surname')
-  console.log('get user', data)
-  return data
-})
+const u = useUsers()
+u.getUsers()
 
 </script>
 
