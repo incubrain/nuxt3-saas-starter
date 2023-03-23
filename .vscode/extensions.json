@@ -12,8 +12,6 @@
 		// language
 		"ecmel.vscode-html-css",
 		"ms-vscode.vscode-typescript-next",
-		"graphql.vscode-graphql",
-		"graphql.vscode-graphql-syntax",
 		"bradlc.vscode-tailwindcss",
 		"vue.volar",
 		"vue.vscode-typescript-vue-plugin",
