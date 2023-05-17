@@ -3,5 +3,6 @@ export function dynamicAsset(path: string): string {
     eager: true,
     import: 'default'
   })
+  //! todo - fix this ts error
   return assets['/assets/' + path]
 }
