@@ -10,10 +10,11 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
   - [@nuxtjs/partytown:](https://github.com/nuxt-modules/partytown) extract blocking JS to a separate thread
   - [@nuxt/image-edge:](https://v1.image.nuxtjs.org/get-started/) Optimize images to improve SEO
   <!-- !todo replace with supabase-js, less likely to have breaking changes over time -->
-  - [@nuxt/supabase:](https://supabase.nuxtjs.org/get-started) for authentication, database, and storage 
+  - [@nuxt/supabase:](https://supabase.nuxtjs.org/get-started) for authentication, database, and storage
   - [@nuxt/devtools:](https://devtools.nuxtjs.org/guide) for improved debugging and project scope
   - [@pinia/nuxt:](https://pinia.vuejs.org/ssr/nuxt.html) for state management
   - [nuxt-icon:](https://icones.js.org/) Access to 100k free icons, view [here](https://icones.js.org/)
+  - [@unlighthouse/nuxt:](https://unlighthouse.dev/guide/getting-started) google lighthouse for your whole website
 - TypeScript
 - Formatting
   - [Prettier:](https://prettier.io/) For formatting code
@@ -26,12 +27,11 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
   - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [Recommended VS Code Extensions](https://github.com/Drew-Macgibbon/nuxt3-starter/blob/main/.vscode/extensions.json)
-- [Wakatime:](https://wakatime.com) For tracking time spent on projects 
-<!-- 
+- [Wakatime:](https://wakatime.com) For tracking time spent on projects
+<!--
 (If you’re not prompted, press F1 or ⌘ + Shift + P then type WakaTime API Key.)
 Your coding stats are visible in your WakaTime dashboard: https://wakatime.com/dashboard
  -->
-  
 
 ## To-do
 
@@ -47,7 +47,7 @@ Your coding stats are visible in your WakaTime dashboard: https://wakatime.com/d
 
 Make sure to install the dependencies:
 
-```bash
+````bash
 # npm
 npm install
 
@@ -57,7 +57,7 @@ Start the development server on http://localhost:3000
 
 ```bash
 npm run dev
-```
+````
 
 ## Production
 
