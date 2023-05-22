@@ -35,17 +35,13 @@ Your coding stats are visible in your WakaTime dashboard: https://wakatime.com/d
 
 ## To-do
 
-- [ ] [Cypress Setup](https://www.cypress.io/)
-- [ ] Composable Demo
+- [ ] [vitest setup]() for unit testing
 - [ ] Middleware Demo
-- [ ] Auth Demo
-- [ ] Assets Demo
-- [ ] Plugins Demo
+- [ ] Supabase Auth pages, login, register, forgot password, etc.
+- [ ] Assets, dynamic loading, nuxt image module
 - [ ] Nuxt Config setup
 
 ## Setup
-
-Make sure to install the dependencies:
 
 ````bash
 # npm
@@ -53,11 +49,11 @@ npm install
 
 ## Development Server
 
-Start the development server on http://localhost:3000
-
 ```bash
 npm run dev
 ````
+
+configure unlighthouse in the nuxt.config.js file. When running `npm run dev` click on the link in the terminal to view your lighthouse reports.
 
 ## Production
 
@@ -72,5 +68,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
