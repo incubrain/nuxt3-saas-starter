@@ -18,6 +18,7 @@ Here's a rundown of the primary technologies used in this starter template:
 - **TypeScript:** Enhances the code quality and understandability.
 - **Zod:** Used for building schemas and managing data validity.
 - **Vitest:** For unit testing, ensuring the quality and stability of the code.
+- **Unlighthouse:** Runs lighthouse audits on every page and provides a report, which essential for good SEO.
 
 ## To-Do List
 
@@ -67,10 +68,6 @@ Deployment is a crucial part of bringing your SaaS to your users. In this guide,
 ## Upcoming Content
 
 Stay tuned for expansive documentation and a video course covering in-depth details of the project. This course will be available for a nominal fee, providing you with a comprehensive understanding of the starter template and how you can maximize its potential.
-
-## Special Acknowledgements
-
-This project has been inspired and guided by various resources and discussions within the SaaS community. We would like to extend our heartfelt appreciation to all the contributors and mentors who've shared their insights.
 
 ## Externals Setup
 
