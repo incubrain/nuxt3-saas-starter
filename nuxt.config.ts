@@ -54,6 +54,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/image-edge',
     '@unlighthouse/nuxt',
+    'nuxt-security',
     [
       '@pinia/nuxt',
       {

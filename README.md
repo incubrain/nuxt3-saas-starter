@@ -19,6 +19,8 @@ Here's a rundown of the primary technologies used in this starter template:
 - **Zod:** Used for building schemas and managing data validity.
 - **Vitest:** For unit testing, ensuring the quality and stability of the code.
 - **Unlighthouse:** Runs lighthouse audits on every page and provides a report, which essential for good SEO.
+- **Vercel:** Used for deployment.
+- **[Nuxt Security:](https://nuxt-security.vercel.app/)** Security Module for Nuxt based on OWASP Top 10 and Helmet
 
 ## To-Do List
 
@@ -43,7 +45,7 @@ The following features and improvements are in the works:
 
 ## Initial Setup
 
-1. **Environment Variables:** Duplicate the .env_example file and rename it to .env.
+1. **Environment Variables:** Duplicate the example.env file and rename it to .env.
 2. **Supabase:** Set up Supabase for Authentication and Database functionalities.
 3. **Stripe:** Set up Stripe for Subscription payments.
 
