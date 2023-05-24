@@ -7,6 +7,10 @@ export default defineNuxtConfig({
       device: 'desktop'
     }
   },
+  security: {
+    corsHandler: false,
+    headers: false,
+  },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
@@ -28,7 +32,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: ['/assets/main.css'],
+  css: ['/assets/css/tailwind.css'],
   imports: {
     dirs: ['stores']
   },
