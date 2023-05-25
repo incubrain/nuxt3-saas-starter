@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <slot />
-  </div>
+  <body class="w-full h-full">
+    <NavTop />
+    <div>
+      <slot />
+    </div>
+  </body>
 </template>
 
 <script>

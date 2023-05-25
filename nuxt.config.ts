@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   security: {
     corsHandler: false,
-    headers: false,
+    headers: false
   },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },
@@ -49,13 +49,11 @@ export default defineNuxtConfig({
     preset: 'render-com'
   },
   modules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxthq/ui',
     '@nuxt/content',
     '@nuxtjs/partytown',
-    'nuxt-icon',
     '@nuxt/devtools',
     '@nuxtjs/supabase',
-    '@nuxtjs/color-mode',
     '@nuxt/image-edge',
     '@unlighthouse/nuxt',
     'nuxt-security',
