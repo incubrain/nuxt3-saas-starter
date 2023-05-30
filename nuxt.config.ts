@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       // link: [
       //   { rel: 'stylesheet', href: '' }
@@ -53,7 +54,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/partytown',
     '@nuxt/devtools',
-    '@nuxtjs/supabase',
     '@nuxt/image-edge',
     '@unlighthouse/nuxt',
     'nuxt-security',
@@ -69,17 +69,13 @@ export default defineNuxtConfig({
     forward: ['dataLayer.push']
   },
   runtimeConfig: {
-    // The private keys which are only available within server-side
-    apiSecret: '123',
     // Keys within public, will be also exposed to the client-side
     public: {
-      apiBase: '/api'
-    }
-  },
-  supabase: {
-    // Options: https://supabase.nuxtjs.org/get-started#options
-    url: process.env.SUPABASE_URL,
-    key: process.env.SUPABASE_KEY
+      SUPABASE_URL: process.env.SUPABASE_URL,
+      SUPABASE_KEY: process.env.SUPABASE_KEY
+    },
+    // The private keys which are only available within server-side
+    SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_KEY
   },
   build: {
     transpile: ['']
