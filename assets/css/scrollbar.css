@@ -1,0 +1,24 @@
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border: 3px solid transparent;
+  /* Creates "gap" */
+  background-clip: content-box;
+  /* Prevents background color from filling "gap" */
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border: 3px solid transparent;
+  /* Creates "gap" */
+  background-clip: content-box;
+  /* Prevents background color from filling "gap" */
+  border-radius: 8px;
+}

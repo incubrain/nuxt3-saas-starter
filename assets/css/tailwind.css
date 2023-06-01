@@ -1,17 +1,53 @@
+@import './scrollbar.css';
+@import './transitions.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './transitions.css';
 
-/* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+@layer base {
+  :root {
+    --nav-height-sm: 40px;
+    --nav-height-md: 50px;
+    --nav-height-lg: 60px;
+  }
 }
 
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+@layer components {
+  .card {
+    @apply p-4 border-b border-slate-300 md:border-none md:p-12 md:rounded-lg bg-white text-black md:shadow-sm w-full;
+  }
+}
+
+@layer utilities {
+  /* Base styles, set light/dark mode here */
+  .scrollbar::-webkit-scrollbar-track {
+    @apply bg-zinc-200 dark:bg-zinc-900;
+  }
+  body {
+    @apply text-zinc-800 dark:text-zinc-300 bg-zinc-100 dark:bg-neutral-950;
+  }
+  .nav-link {
+    @apply text-zinc-800 dark:text-zinc-100 hover:text-primary-600 dark:hover:text-primary-700 cursor-pointer;
+  }
+  .link {
+    @apply text-secondary-600 dark:text-secondary-800 hover:text-primary-500 dark:hover:text-primary-700 cursor-pointer;
+  }
+  .foreground {
+    @apply bg-zinc-200 dark:bg-zinc-900;
+  }
+  /* 
+  Consider these
+  .border-color {
+    @apply border-zinc-300 dark:border-zinc-800;
+  }
+  .text-light {
+    @apply text-zinc-100 dark:text-zinc-300;
+  }
+  .home-width {
+    @apply max-w-[100%] md:max-w-[80%] lg:max-w-[1240px];
+  }
+  .inverted {
+    @apply text-[#fff];
+  } */
 }

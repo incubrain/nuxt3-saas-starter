@@ -1,30 +1,12 @@
 <template>
-  <body class="w-full h-full">
+  <div class="w-full h-full">
     <NavTop />
-    <div>
+    <AppBody class="p-4">
       <slot />
-    </div>
-  </body>
+    </AppBody>
+  </div>
 </template>
 
-<script>
+<script></script>
 
-</script>
-
-<style>
-/*
-Layout transition animation
-https://nuxt.com/docs/getting-started/transitions
-*/
-.layout-enter-active,
-.layout-leave-active {
-  transition: all 0.4s;
-}
-
-.layout-enter-from,
-.layout-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-
-</style>
+<style></style>
