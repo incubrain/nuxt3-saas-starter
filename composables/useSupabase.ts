@@ -1,3 +1,5 @@
-import type { Database } from '@/types/schema'
-
-export default () => useSupabaseClient<Database>()
+export default () => {
+  const nuxtApp = useNuxtApp()
+  const client = nuxtApp.$publicClient
+  return client
+}
