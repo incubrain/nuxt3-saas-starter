@@ -1,5 +1,5 @@
 export const postsMany = async () => {
-  const client = usePublicClient()
+  const client = useSupabase()
   const { data, error } = await client.from('posts').select()
 
   return {
@@ -9,11 +9,8 @@ export const postsMany = async () => {
 }
 
 export const postById = async (postId: number) => {
-  const client = usePublicClient()
-  const { data, error } = await client
-    .from('posts')
-    .select('*')
-    .eq('id', postId)
+  const client = useSupabase()
+  const { data, error } = await client.from('posts').select('*').eq('id', postId)
 
   return {
     data,
@@ -22,11 +19,8 @@ export const postById = async (postId: number) => {
 }
 
 export const postByCategory = async (category: string) => {
-  const client = usePublicClient()
-  const { data, error } = await client
-    .from('posts')
-    .select('*')
-    .eq('category_id', category)
+  const client = useSupabase()
+  const { data, error } = await client.from('posts').select('*').eq('category_id', category)
 
   return {
     data,

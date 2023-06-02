@@ -1,5 +1,5 @@
 export const registerWithEmail = async (email: string, password: string) => {
-  const client = usePublicClient()
+  const client = useSupabase()
   const { data, error } = await client.auth.signUp({ email, password })
 
   return {
@@ -9,7 +9,7 @@ export const registerWithEmail = async (email: string, password: string) => {
 }
 
 export const registerWithOAuth = async (provider: string) => {
-  const client = usePublicClient()
+  const client = useSupabase()
   const { data, error } = await client.auth.signInWithOAuth({ provider })
 
   return {

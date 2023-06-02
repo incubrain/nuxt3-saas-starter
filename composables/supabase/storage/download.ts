@@ -3,14 +3,12 @@ const privateBucket = 'private-media'
 
 const folder = async (userId: string, isPublic: boolean) => {
   const folder = isPublic ? publicBucket : privateBucket
-  const client = usePublicClient()
+  const client = useSupabase()
 
-  const { data, error } = await client.storage
-    .from(`${folder}`)
-    .list(`${userId}/`, {
-      limit: 100,
-      offset: 0
-    })
+  const { data, error } = await client.storage.from(`${folder}`).list(`${userId}/`, {
+    limit: 100,
+    offset: 0
+  })
 
   return {
     data,
@@ -19,11 +17,9 @@ const folder = async (userId: string, isPublic: boolean) => {
 }
 const avatar = async (userId: string, isPublic: boolean) => {
   const folder = isPublic ? publicBucket : privateBucket
-  const client = usePublicClient()
+  const client = useSupabase()
 
-  const { data, error } = await client.storage
-    .from(`${folder}`)
-    .download(`${userId}/avatar.png`)
+  const { data, error } = await client.storage.from(`${folder}`).download(`${userId}/avatar.png`)
 
   return {
     data,

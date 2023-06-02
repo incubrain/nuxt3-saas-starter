@@ -17,6 +17,10 @@
   .card {
     @apply p-4 border-b border-slate-300 md:border-none md:p-12 md:rounded-lg bg-white text-black md:shadow-sm w-full;
   }
+
+  .input {
+    @apply text-sm p-2 rounded overflow-hidden border border-zinc-900 dark:border-zinc-800 bg-gray-50 dark:bg-gray-800 text-zinc-800 dark:text-zinc-300;
+  }
 }
 
 @layer utilities {
@@ -25,7 +29,7 @@
     @apply bg-zinc-200 dark:bg-zinc-900;
   }
   body {
-    @apply text-zinc-800 dark:text-zinc-300 bg-zinc-100 dark:bg-neutral-950;
+    @apply border-zinc-300 dark:border-zinc-800 text-zinc-800 dark:text-zinc-300 bg-zinc-100 dark:bg-neutral-950;
   }
   .nav-link {
     @apply text-zinc-800 dark:text-zinc-100 hover:text-primary-600 dark:hover:text-primary-700 cursor-pointer;
@@ -36,11 +40,11 @@
   .foreground {
     @apply bg-zinc-200 dark:bg-zinc-900;
   }
-  /* 
-  Consider these
   .border-color {
     @apply border-zinc-300 dark:border-zinc-800;
   }
+  /* 
+  Consider these
   .text-light {
     @apply text-zinc-100 dark:text-zinc-300;
   }
@@ -50,4 +54,22 @@
   .inverted {
     @apply text-[#fff];
   } */
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-semibold;
+  }
+  h5 {
+    @apply text-lg font-semibold;
+  }
+  h6 {
+    @apply text-base font-bold uppercase tracking-tight;
+  }
 }

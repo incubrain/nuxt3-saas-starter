@@ -13,7 +13,7 @@ export default function useAuth() {
 
   return {
     login: {
-      withEmail: loginWithEmail
+      withEmail: loginWithEmail,
       withOAuth: loginWithOAuth
     },
     logout,

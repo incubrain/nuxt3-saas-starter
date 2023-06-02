@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-[100vh]">
     <NavTop />
-    <AppBody class="p-4">
+    <AppBody>
       <slot />
     </AppBody>
   </div>
@@ -9,4 +9,8 @@
 
 <script setup lang="ts"></script>
 
-<style></style>
+<style scoped>
+::-webkit-scrollbar {
+  display: none;
+}
+</style>

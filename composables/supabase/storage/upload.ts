@@ -13,7 +13,7 @@ const profileSingle = async ({
   type: string
 }) => {
   const myUUID = uuidv4()
-  const client = usePublicClient()
+  const client = useSupabase()
   console.log('uploadFile', file, userId)
   const { data, error } = await client.storage
     .from(publicBucket)

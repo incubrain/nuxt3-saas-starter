@@ -3,7 +3,7 @@ const url = 'http://localhost:3000/'
 export const showResetForm = false
 
 export const requestResetEmail = async (email: string) => {
-  const client = usePublicClient()
+  const client = useSupabase()
   const { data, error } = await client.auth.resetPasswordForEmail(email, {
     redirectTo: `${url}reset-password`
   })
@@ -15,7 +15,7 @@ export const requestResetEmail = async (email: string) => {
 }
 
 export const update = async (newPassword: string) => {
-  const client = usePublicClient()
+  const client = useSupabase()
   const { data, error } = await client.auth.updateUser({
     password: newPassword
   })

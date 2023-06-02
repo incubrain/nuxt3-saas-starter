@@ -17,7 +17,9 @@ export default defineStore('users', {
     async getUsers() {
       const supabase = useSupabase()
       try {
-        const { data, error } = await supabase.from('users').select('id, given_name, surname, username, avatar')
+        const { data, error } = await supabase
+          .from('users')
+          .select('id, given_name, surname, username, avatar, introduction')
 
         if (error) throw error
         this.users = validateWithZod(z.User, data)

@@ -1,4 +1,3 @@
-
 export const profileSingle = ({
   userId,
   type,
@@ -16,7 +15,7 @@ export const profileSingle = ({
   //   }
   // }
   console.log('profileSingle', userId, type)
-  const client = usePublicClient()
+  const client = useSupabase()
   const { data } = client.storage
     .from('profile-public')
     .getPublicUrl(`${userId}/${type}/${fileName}.png`)

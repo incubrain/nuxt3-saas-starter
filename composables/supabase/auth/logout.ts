@@ -1,5 +1,5 @@
 export const logout = async () => {
-  const client = usePublicClient()
+  const client = useSupabase()
   const { error } = await client.auth.signOut()
 
   // removes session cookie

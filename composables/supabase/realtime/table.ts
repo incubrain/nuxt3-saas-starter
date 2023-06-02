@@ -1,7 +1,7 @@
 const data = ref([{ id: 1, title: 'old content', body: 'some stuff to show' }])
 
 const single = () => {
-  const client = usePublicClient()
+  const client = useSupabase()
   const channel = client.channel('newsfeed')
   channel.on(
     'postgres_changes',

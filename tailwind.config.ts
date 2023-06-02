@@ -7,8 +7,8 @@ export default <Partial<Config>>{
     extend: {
       colors: {
         secondary: c.indigo
-      },
-    },
+      }
+    }
   },
   plugins: [
     // require('@tailwindcss/typography'),
