@@ -57,6 +57,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@unlighthouse/nuxt',
     'nuxt-security',
+    '@nuxtjs/supabase',
     [
       '@pinia/nuxt',
       {

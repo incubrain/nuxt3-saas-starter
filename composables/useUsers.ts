@@ -15,9 +15,9 @@ export default defineStore('users', {
   }),
   actions: {
     async getUsers() {
-      const supabase = useSupabase()
+      const client = useSupabase()
       try {
-        const { data, error } = await supabase
+        const { data, error } = await client
           .from('users')
           .select('id, given_name, surname, username, avatar, introduction')
 

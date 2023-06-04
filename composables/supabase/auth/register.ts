@@ -8,7 +8,7 @@ export const registerWithEmail = async (email: string, password: string) => {
   }
 }
 
-export const registerWithOAuth = async (provider: string) => {
+export const registerWithOAuth = async (provider: 'github' | 'google' | 'gitlab' | 'bitbucket') => {
   const client = useSupabase()
   const { data, error } = await client.auth.signInWithOAuth({ provider })
 
