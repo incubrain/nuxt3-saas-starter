@@ -42,7 +42,8 @@ export default defineNuxtConfig({
     tsConfig: {
       exclude: ['node_modules', 'dist'],
       compilerOptions: {
-        strict: true
+        strict: true,
+        types: ['@sentry/vue']
       }
     }
   },

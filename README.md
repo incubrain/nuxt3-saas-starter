@@ -13,7 +13,7 @@ projects until its completion. For updates, you can follow our progress in the t
 
 - 🎨 [Tailwind CSS](https://tailwindcss.com) - The gold standard CSS utility framework
 
-- 😃 [Nuxthq/ui]() - elegant components/icons for Tailwind CSS and Nuxt.js.
+- 😃 [Nuxthq/ui]() - elegant nuxt 3 components/icons using Tailwind.
 
 - 🔥 The `<script setup>` syntax.
 
@@ -21,6 +21,8 @@ projects until its completion. For updates, you can follow our progress in the t
   [./composables/user.ts](./composables/user.ts).
 
 - 🏎 Vercel for easy hosting.
+
+- 🏎 [Sentry/Vue](https://docs.sentry.io/platforms/javascript/guides/vue/) for error and performance monitoring.
 
 - 🏎 Payments, using Stripe Billing.
 
