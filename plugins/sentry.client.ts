@@ -1,20 +1,21 @@
 import * as Sentry from '@sentry/vue'
-import { BrowserTracing } from '@sentry/browser'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
+  const dsn = process.env.SENTRY_DSN
   const environment = process.env.NODE_ENV
   console.log('environment: ', environment)
   const router = useRouter()
   Sentry.init({
     app,
     environment,
-    dsn: 'https://.ingest.sentry.io/4504583122780160',
+    dsn,
     integrations: [
-      new BrowserTracing({
+      new Sentry.BrowserTracing({
         routingInstrumentation: Sentry.vueRouterInstrumentation(router),
-        tracePropagationTargets: ['localhost', 'dev-server', /^\//]
-      })
+        tracePropagationTargets: ['localhost', /^https:\/\/yourserver\.io\/api/]
+      }),
+      new Sentry.Replay()
     ],
     // Set tracesSampleRate, sampleRate to 1.0 to capture 100%, change in production
     sampleRate: 1,

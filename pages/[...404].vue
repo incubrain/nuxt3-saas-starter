@@ -4,12 +4,12 @@
 -->
 
 <template>
-  <div class="h-[100vh]">
+  <div class="min-h-[50vh] flex justify-center items-center">
     <div class="w-full h-full flex flex-col items-center justify-center">
-      <h1 class="text-[10vw] text-white mb-2 leading-[9vw]">
+      <h1 class="text-[10vw] mb-2 leading-[9vw]">
         404
       </h1>
-      <h3 class="text-[4vh] text-white mt-0">
+      <h3 class="text-[4vh] mt-0">
         WE'RE LOST
       </h3>
       <NuxtLink
