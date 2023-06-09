@@ -17,8 +17,7 @@ projects until its completion. For updates, you can follow our progress in the t
 
 - 🔥 The `<script setup>` syntax.
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev), see
-  [./composables/user.ts](./composables/user.ts).
+- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts).
 
 - 🏎 Vercel for easy hosting.
 

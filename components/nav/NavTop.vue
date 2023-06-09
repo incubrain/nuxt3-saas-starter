@@ -22,7 +22,9 @@
       <div class="col-start-3 col-span-1 flex w-full relative">
         <div class="flex gap-4 w-full h-full items-center justify-end">
           <AppThemeSwitch />
-          <UButton color="primary" icon="i-heroicons-forward"> Join </UButton>
+          <NuxtLink to="/auth/login" class="nav-link">
+            <UButton color="primary" icon="i-heroicons-forward"> Join </UButton>
+          </NuxtLink>
         </div>
       </div>
     </div>

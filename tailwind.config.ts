@@ -6,7 +6,8 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        secondary: c.indigo
+        secondary: c.indigo,
+        error: c.red
       }
     }
   },

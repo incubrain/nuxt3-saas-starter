@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-[100vh]">
+  <div class="w-full h-full">
     <NavTop />
     <AppBody>
       <slot />

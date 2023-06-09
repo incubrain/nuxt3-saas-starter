@@ -43,6 +43,11 @@
 </template>
 
 <script setup lang="ts">
+
+definePageMeta({
+  name: 'Contact'
+})
+
 const pricingOptions = ['monthly', 'yearly'] as const
 type PricingOption = (typeof pricingOptions)[number]
 
