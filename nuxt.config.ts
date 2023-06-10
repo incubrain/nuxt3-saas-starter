@@ -83,6 +83,9 @@ export default defineNuxtConfig({
     transpile: ['']
   },
   ssr: true,
+  ui: {
+    icons: ['mdi', 'heroicons', 'material-symbols']
+  },
   content: {
     // Nuxt content options
     highlight: {
