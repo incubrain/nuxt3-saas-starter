@@ -1,44 +1,32 @@
 <template>
-  <div class="grid md:grid-cols-[500px_1fr] foreground h-full">
-    <div
-      class="col-start-1 px-8 h-full flex flex-col justify-center items-center relative z-20 border-r-2 border-color shadow-xl"
+  <div class="w-full h-full flex flex-col justify-center items-center">
+    <h2 class="text-2xl mb-6 text-center"> Sign In </h2>
+    <FormDynamic
+      :schema="loginData"
+      :schema-validation="LoginValidation"
+      class="w-full"
+      @submit.prevent="handleLogin"
     >
-      <h2 class="text-2xl mb-6 text-center">
-        Sign In
-      </h2>
-      <FormDynamic
-        :schema="loginData"
-        :schema-validation="LoginValidation"
-        class="w-full"
-        @submit.prevent="handleLogin"
-      >
-        <UButton
-          color="primary"
-          size="md"
-          class="w-full flex items-center justify-center"
-          type="submit"
-        >
-          Sign In
-        </UButton>
-      </FormDynamic>
-      <p class="text-center text-sm mt-4">
-        <NuxtLink to="/auth/forgot-password">
-          Forgot Password?
-        </NuxtLink>
-      </p>
       <UButton
-        class="w-full mt-6 flex justify-center items-center gap-4"
-        color="white"
-        @click="handleGoogleSignIn"
+        color="primary"
+        size="md"
+        class="w-full flex items-center justify-center"
+        type="submit"
       >
-        <NuxtImg src="/icons/google.svg" alt="Google Logo" width="28px" />
-        Sign In with Google
+        Sign In
       </UButton>
-    </div>
-    <div class="h-full hidden md:flex relative col-start-2 overflow-hidden">
-      <div class="dark:bg-black/30 absolute w-full h-full left-0 top-0" />
-      <NuxtImg src="/images/auth-bg.jpg" fit="fill" quality="70" alt="" class="w-full" />
-    </div>
+    </FormDynamic>
+    <p class="text-center text-sm mt-4">
+      <NuxtLink to="/auth/forgot-password"> Forgot Password? </NuxtLink>
+    </p>
+    <UButton
+      class="w-full mt-6 flex justify-center items-center gap-4"
+      color="white"
+      @click="handleGoogleSignIn"
+    >
+      <NuxtImg src="/icons/google.svg" alt="Google Logo" width="28px" />
+      Sign In with Google
+    </UButton>
   </div>
 </template>
 
@@ -49,7 +37,7 @@ import loginData from '@/data/forms/login.json'
 
 const auth = useAuth()
 
-const handleLogin = (value: { email: string, password: string }) => {
+const handleLogin = (value: { email: string; password: string }) => {
   auth.login.withEmail(value.email, value.password)
 }
 
