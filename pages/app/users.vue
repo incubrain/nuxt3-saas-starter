@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UInput v-model="q" placeholder="Filter people..." />
+    <UInput v-model="query" placeholder="Filter people..." />
     <UTable v-model="selected" :rows="filteredRows" :columns="columns">
       <template #name-data="{ row }">
         <span
@@ -131,13 +131,13 @@ const items = (row) => [
 const query = ref('')
 
 const filteredRows = computed(() => {
-  if (!q.value) {
+  if (!query.value) {
     return people
   }
 
   return people.filter((person) => {
     return Object.values(person).some((value) => {
-      return String(value).toLowerCase().includes(q.value.toLowerCase())
+      return String(value).toLowerCase().includes(query.value.toLowerCase())
     })
   })
 })
