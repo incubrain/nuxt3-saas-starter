@@ -1,10 +1,5 @@
 [
   {
-    "label": "Given name",
-    "name": "givenName",
-    "as": "input"
-  },
-  {
     "label": "Email",
     "name": "email",
     "as": "input"

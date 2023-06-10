@@ -1,5 +1,5 @@
 <template>
-  <div class="w-80 md:w-auto border rounded-md shadow-md py-6 px-10 md:px-12 xl:px-16" :class="pricingId === 2 ? 'bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-primary-500 to-primary-300' : 'foreground'">
+  <div class="md:w-auto border border-color rounded-md shadow-md py-6 px-8 md:px-10 xl:px-16" :class="pricingId === 2 ? 'bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-primary-500 to-primary-300' : 'foreground'">
     <div class="w-64 flex justify-center items-center">
       <div class="w-64 flex justify-center items-center flex-col">
         <div class="flex w-full justify-center items-center flex-col space-y-6 lg:space-y-4">

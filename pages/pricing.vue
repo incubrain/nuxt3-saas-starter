@@ -4,7 +4,7 @@
       class="2xl:container 2xl:mx-auto py-12 px-4 md:px-6 xl:px-20 flex flex-col justify-center items-center"
     >
       <h1
-        class="text-xl md:text-2xl lg:text-4xl font-bold lg:font-extrabold leading-6 md:leading-8 lg:leading-10 text-center text-gray-800 w-2/3"
+        class="text-xl md:text-2xl lg:text-4xl font-bold lg:font-extrabold leading-6 md:leading-8 lg:leading-10 text-center w-2/3"
       >
         Finely-tuned for <br />individuals and teams
       </h1>
@@ -27,7 +27,7 @@
       </div>
 
       <div
-        class="mt-7 md:mt-10 lg:mt-12 md:flex-row flex-col flex justify-center items-start space-y-6 md:space-y-0 md:space-x-6 lg:space-x-8"
+        class="mt-7 lg:mt-10 lg:mt-12 lg:flex-row flex-col flex justify-center items-start space-y-6 lg:space-y-0 lg:space-x-8"
       >
         <PricingCard
           v-for="plan in pricingPlans"

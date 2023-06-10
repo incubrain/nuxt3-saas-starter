@@ -9,10 +9,14 @@
         :as="field.as"
         :name="field.name"
         :rules="(value) => validateWithZod(field.name, value)"
-        class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+        class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-sm placeholder:text-gray-300 dark:placeholder-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100"
         :placeholder="field.label"
+        :type="field.type"
       />
-      <VErrorMessage :name="field.name" class="text-error-400 dark:text-error-800 px-3 py-1 text-xs italic block" />
+      <VErrorMessage
+        :name="field.name"
+        class="text-error-400 dark:text-error-800 px-3 py-1 text-xs italic block"
+      />
     </div>
     <slot />
   </VForm>
@@ -32,7 +36,7 @@ const p = defineProps({
   },
   hasLabels: {
     type: Boolean,
-    required: true
+    default: false
   }
 })
 

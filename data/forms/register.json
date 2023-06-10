@@ -1,0 +1,24 @@
+[
+  {
+    "label": "Given name",
+    "name": "givenName",
+    "as": "input"
+  },
+  {
+    "label": "Email",
+    "name": "email",
+    "as": "input"
+  },
+  {
+    "label": "Password",
+    "name": "password",
+    "as": "input",
+    "type": "password"
+  },
+  {
+    "label": "Confirm Password",
+    "name": "confirmPassword",
+    "as": "input",
+    "type": "password"
+  }
+]

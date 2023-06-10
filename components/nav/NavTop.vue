@@ -1,7 +1,7 @@
 <template>
   <!-- Navigation starts -->
   <nav
-    class="flex items-center md:items-stretch w-full justify-end md:justify-between foreground shadow relative z-50 px-4 sm:h-[var(--nav-height-sm)] md:h-[var(--nav-height-md)] lg:h-[var(--nav-height-lg)]"
+    class="flex items-center md:items-stretch w-full justify-end md:justify-between border-b border-color foreground shadow relative z-50 px-4 sm:h-[var(--nav-height-sm)] md:h-[var(--nav-height-md)] lg:h-[var(--nav-height-lg)]"
   >
     <div
       class="grid grid-cols-[minmax(160px,1fr)_minmax(1fr,420px)_minmax(160px,220px)] gap-6 items-center w-full md:flex justify-between"

@@ -3,14 +3,12 @@
     <div
       class="col-start-1 px-8 h-full flex flex-col justify-center items-center relative z-20 border-r-2 border-color shadow-xl"
     >
-      <h2 class="text-2xl mb-6 text-center">
-        Sign In
-      </h2>
+      <h2 class="text-2xl mb-6 text-center">Sign Up</h2>
       <FormDynamic
-        :schema="loginData"
-        :schema-validation="LoginValidation"
+        :schema="registerData"
+        :schema-validation="RegisterValidation"
         class="w-full"
-        @submit.prevent="handleLogin"
+        @submit.prevent="handleRegister"
       >
         <UButton
           color="primary"
@@ -18,54 +16,53 @@
           class="w-full flex items-center justify-center"
           type="submit"
         >
-          Sign In
+          Sign Up
         </UButton>
       </FormDynamic>
       <p class="text-center text-sm mt-4">
-        <NuxtLink to="/auth/forgot-password">
-          Forgot Password?
-        </NuxtLink>
+        <NuxtLink to="/auth/login">Already have an account? Sign In</NuxtLink>
       </p>
       <UButton
         class="w-full mt-6 flex justify-center items-center gap-4"
         color="white"
-        @click="handleGoogleSignIn"
+        @click="handleGoogleSignUp"
       >
         <NuxtImg src="/icons/google.svg" alt="Google Logo" width="28px" />
-        Sign In with Google
+        Sign Up with Google
       </UButton>
     </div>
-    <div class="h-full hidden md:flex relative col-start-2 overflow-hidden">
+    <div class="h-full w-full hidden md:flex relative col-start-2 overflow-hidden">
       <div class="dark:bg-black/30 absolute w-full h-full left-0 top-0" />
-      <NuxtImg src="/images/auth-bg.jpg" fit="fill" quality="70" alt="" class="w-full" />
+      <NuxtImg src="/images/auth-bg.jpg" quality="70" alt="" class="w-full object-cover" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import useAuth from '~/composables/useAuth'
-import { LoginValidation } from '@/types/zod'
-import loginData from '@/data/forms/login.json'
+import { RegisterValidation } from '@/types/zod'
+import registerData from '@/data/forms/register.json'
 
 const auth = useAuth()
 
-const handleLogin = (value: { email: string, password: string }) => {
-  auth.login.withEmail(value.email, value.password)
+const handleRegister = async (value: { email: string, password: string }) => {
+  const { email, password } = value
+  await auth.register.withEmail(email, password)
 }
 
-async function handleGoogleSignIn() {
+async function handleGoogleSignUp() {
   try {
-    const { data, error } = await auth.login.withOAuth('google')
+    const { data, error } = await auth.register.withOauth('google')
 
     if (error) throw error
-    console.log('User logged in via Google', data)
+    console.log('User registered via Google', data)
   } catch (error) {
-    console.error('Error logging in via Google', error)
+    console.error('Error registering via Google', error)
   }
 }
 
 definePageMeta({
-  name: 'Login',
+  name: 'Register',
   layout: 'auth'
 })
 </script>

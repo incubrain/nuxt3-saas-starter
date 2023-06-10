@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center items-center space-x-2">
-    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/pricing_5_svg1.svg" alt="blue tick" />
-    <p class="text-sm leading-none text-gray-600">
+    <UIcon name="i-material-symbols-check-small" class="text-primary-600 dark:text-primary-800 w-5 h-5" />
+    <p class="text-sm leading-none">
       {{ text }}
     </p>
   </div>
