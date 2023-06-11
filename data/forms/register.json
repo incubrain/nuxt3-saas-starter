@@ -1,24 +1,38 @@
 [
   {
-    "label": "Given name",
     "name": "givenName",
-    "as": "input"
+    "component": "FormText",
+    "props": {
+      "label": "Given name",
+      "name": "givenName",
+      "type": "text"
+    }
   },
   {
-    "label": "Email",
     "name": "email",
-    "as": "input"
+    "component": "FormText",
+    "props": {
+      "label": "Email",
+      "name": "email",
+      "type": "email"
+    }
   },
   {
-    "label": "Password",
     "name": "password",
-    "as": "input",
-    "type": "password"
+    "component": "FormText",
+    "props": {
+      "label": "Password",
+      "name": "password",
+      "type": "password"
+    }
   },
   {
-    "label": "Confirm Password",
     "name": "confirmPassword",
-    "as": "input",
-    "type": "password"
+    "component": "FormText",
+    "props": {
+      "label": "Confirm Password",
+      "name": "confirmPassword",
+      "type": "password"
+    }
   }
 ]

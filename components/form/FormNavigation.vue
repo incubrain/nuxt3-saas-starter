@@ -1,13 +1,19 @@
 <template>
   <div class="w-full mt-3 space-x-3 flex justify-between">
-    <button type="button" @click="prevStep" class="...">Prev</button>
-    <button type="button" @click="nextStep" class="...">Next</button>
+    <UButton type="button" @click="prevStep"> Prev </UButton>
+    <UButton type="button" @click="nextStep">Next</UButton>
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps({
-  nextStep: Function,
-  prevStep: Function
+  nextStep: {
+    type: Function,
+    required: true
+  },
+  prevStep: {
+    type: Function,
+    required: true
+  }
 })
 </script>

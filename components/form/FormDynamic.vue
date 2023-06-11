@@ -4,15 +4,17 @@
       <label v-if="p.hasLabels" :for="field.name" class="block text-sm font-bold mb-2">{{
         field.label
       }}</label>
-      <VField
+
+      <component
+        :is="field.component"
+        v-bind="field.props"
         :id="field.name"
-        :as="field.as"
         :name="field.name"
         :rules="(value) => validateWithZod(field.name, value)"
         class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-sm placeholder:text-gray-300 dark:placeholder-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100"
         :placeholder="field.label"
-        :type="field.type"
       />
+
       <VErrorMessage
         :name="field.name"
         class="text-error-400 dark:text-error-800 px-3 py-1 text-xs italic block"
@@ -23,8 +25,6 @@
 </template>
 
 <script setup lang="ts">
-import { ZodError } from 'zod'
-
 const p = defineProps({
   schema: {
     type: Object,
@@ -42,9 +42,9 @@ const p = defineProps({
 
 const validateWithZod = (fieldName, value) => {
   try {
-    p.schemaValidation[fieldName].parse(value)
+    p.schemaValidation.shape[fieldName].parse(value)
     return true
-  } catch (error: ZodError) {
+  } catch (error) {
     return JSON.parse(error)[0].message
   }
 }

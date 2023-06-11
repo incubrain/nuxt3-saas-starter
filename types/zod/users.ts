@@ -2,13 +2,13 @@
 import * as z from 'zod'
 
 // What role does this user have in your application?
-export const Role = z.object({
+export const RoleValidation = z.object({
   id: z.number(),
   name: z.string().nullable(),
   body: z.string().nullable().optional()
 })
 
-export const User = z.object({
+export const UserValidation = z.object({
   id: z.number(),
   created_at: z.string().optional(),
   updated_at: z.string().optional(),

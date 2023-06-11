@@ -1,96 +1,56 @@
 <template>
-  <div>
-    <FormHeader :title="title" :description="description" />
-    <div>
-      <FormStepButton
-        v-for="(item, index) in steps"
-        :key="index"
-        :title="item.title"
-        :controls="`step-${index + 1}`"
-        :step-number="index + 1"
-        :active-step="currentStep"
-        @click="navigateToStep(index + 1)"
-      />
-
-      <FormSection v-show="currentStep === 1" form="step-1">
-        <FormText
-          type="text"
-          name="firstName"
-          placeholder="First name"
-          label="First Name"
-          v-model="form.firstName"
-        />
-        <FormText
-          type="text"
-          name="lastName"
-          placeholder="Last name"
-          label="Last Name"
-          v-model="form.lastName"
-        />
-        <FormNavigation :nextStep="nextStep" :prevStep="prevStep" />
-      </FormSection>
-
-      <FormSection v-show="currentStep === 2" form="step-2">
-        <FormText
-          type="email"
-          name="email"
-          placeholder="Email"
-          label="Email"
-          v-model="form.email"
-        />
-        <FormText
-          type="password"
-          name="password"
-          placeholder="Password"
-          label="Password"
-          v-model="form.password"
-        />
-        <FormNavigation :nextStep="nextStep" :prevStep="prevStep" />
-      </FormSection>
-
-      <FormSection v-show="currentStep === 3" form="step-3">
-        <FormCheckbox
-          id="terms"
-          type="checkbox"
-          name="terms"
-          value="accepted"
-          label="Accept Terms and Conditions"
-          v-model="form.terms"
-        />
-        <FormNavigation :nextStep="nextStep" :prevStep="prevStep" />
-      </FormSection>
+  <div class="step-form-wizard">
+    <div v-for="(step, index) in steps" :key="index">
+      <div v-show="currentStep === index">
+        <FormDynamic
+          :schema="step.schema"
+          :schema-validation="step.validation"
+          class="w-full"
+          @submit.prevent="handleNext"
+        >
+          <UButton :disabled="!canAdvance" @click="handleNext">Next</UButton>
+          <UButton :disabled="!canGoBack" @click="handleBack">Back</UButton>
+        </FormDynamic>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const title = 'Signup Form'
-const description = 'Please fill out the form to signup'
-const steps = reactive([
-  { title: 'Personal Details' },
-  { title: 'Account Details' },
-  { title: 'Confirmation' }
+import { ref, computed } from 'vue'
+import { useForm } from 'vee-validate'
+import {
+  RegisterValidation,
+  InterestValidation,
+  SocialMediaValidation,
+  ProfessionalInfoValidation
+} from '@/types/zod'
+
+import { interestsData, registerData, socialData, professionalData } from '@/data/forms'
+
+const steps = ref([
+  { schema: registerData, validation: RegisterValidation },
+  { schema: interestsData, validation: InterestValidation },
+  { schema: socialData, validation: SocialMediaValidation },
+  { schema: professionalData, validation: ProfessionalInfoValidation }
 ])
+const currentStep = ref(0)
 
-const form = reactive({
-  firstName: '',
-  lastName: '',
-  email: '',
-  password: '',
-  terms: false
-})
+const { validate: validateForm } = useForm()
 
-const currentStep = ref(1)
-
-const nextStep = () => {
-  if (currentStep.value < steps.length) currentStep.value++
+const handleNext = async () => {
+  const isFormValid = await validateForm()
+  if (isFormValid && currentStep.value < steps.value.length - 1) {
+    currentStep.value++
+  }
 }
 
-const prevStep = () => {
-  if (currentStep.value > 1) currentStep.value--
+const handleBack = () => {
+  if (currentStep.value > 0) {
+    currentStep.value--
+  }
 }
 
-const navigateToStep = (step) => {
-  currentStep.value = step
-}
+const canAdvance = computed(() => currentStep.value < steps.value.length - 1)
+const canGoBack = computed(() => currentStep.value > 0)
 </script>

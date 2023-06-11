@@ -2,11 +2,18 @@ import * as forms from './forms'
 import * as users from './users'
 
 // Forms
-export const LoginValidation = forms.loginValidation
-export const RegisterValidation = forms.registerValidation
-export const ForgotPasswordValidation = forms.forgotPasswordValidation
-export const ResetPasswordValidation = forms.resetPasswordValidation
+export const LoginValidation = forms.LoginValidation
+export const RegisterValidation = forms.RegisterValidation
+export const ForgotPasswordValidation = forms.ForgotPasswordValidation
+export const ResetPasswordValidation = forms.ResetPasswordValidation
+export const ProfessionalInfoValidation = forms.ProfessionalInfoValidation
+export const SocialMediaValidation = forms.SocialMediaValidation
+export const LocationValidation = forms.LocationValidation
+export const InterestValidation = forms.InterestValidation
+
+// Form Components
+export const CheckboxOptionValidation = forms.CheckboxOptionValidation
 
 // Users
-export const UserValidation = users.User
-export const RoleValidation = users.Role
+export const UserValidation = users.UserValidation
+export const RoleValidation = users.RoleValidation

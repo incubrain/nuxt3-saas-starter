@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Country",
+    "name": "country",
+    "as": "input"
+  },
+  {
+    "label": "State",
+    "name": "state",
+    "as": "input"
+  },
+  {
+    "label": "City",
+    "name": "city",
+    "as": "input"
+  },
+  {
+    "label": "Address",
+    "name": "address",
+    "as": "input"
+  }
+]

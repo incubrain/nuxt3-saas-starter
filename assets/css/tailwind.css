@@ -11,6 +11,10 @@
     --nav-height-sm: 46px;
     --nav-height-md: 50px;
     --nav-height-lg: 60px;
+
+    --max-w-sm: 600px;
+    --max-w-md: 900px;
+    --max-w-lg: 1140px;
   }
 }
 

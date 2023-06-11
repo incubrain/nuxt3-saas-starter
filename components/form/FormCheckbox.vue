@@ -13,10 +13,25 @@
 
 <script setup lang="ts">
 defineProps({
-  id: String,
-  type: String,
-  name: String,
-  value: String,
-  label: String
+  id: {
+    type: String,
+    required: true
+  },
+  type: {
+    type: String,
+    default: 'checkbox'
+  },
+  name: {
+    type: String,
+    required: true
+  },
+  value: {
+    type: String,
+    default: ''
+  },
+  label: {
+    type: String,
+    required: true
+  }
 })
 </script>
