@@ -7,7 +7,7 @@
       :class="{ 'bg-primary-500 text-white': isSelected(option.value) }"
       @click="toggleSelection(option.value)"
     >
-      <UIcon :name="option.icon" class="h-16 w-16" />
+      <UIcon v-show="option.icon" :name="option.icon" class="h-16 w-16" />
       <span class="mt-2 text-sm">{{ option.label }}</span>
       <VField
         class="hidden"

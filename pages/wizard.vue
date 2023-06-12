@@ -8,8 +8,8 @@
           class="w-full"
           @submit.prevent="handleNext"
         >
-          <UButton :disabled="!canAdvance" @click="handleNext">Next</UButton>
           <UButton :disabled="!canGoBack" @click="handleBack">Back</UButton>
+          <UButton :disabled="!canAdvance" @click="handleNext">Next</UButton>
         </FormDynamic>
       </div>
     </div>
@@ -17,7 +17,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
 import { useForm } from 'vee-validate'
 import {
   RegisterValidation,
