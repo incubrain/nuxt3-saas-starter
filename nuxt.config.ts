@@ -48,11 +48,11 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    preset: 'vercel'
+    preset: 'vercel-edge'
   },
   routeRules: {
     // Don't add any /app/** URLs to the sitemap.xml, app renders on client side.
-    '/app/**': { index: false, ssr: false },
+    '/app/**': { index: false, ssr: false }
   },
   modules: [
     '@nuxthq/ui',
