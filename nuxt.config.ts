@@ -48,10 +48,10 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    preset: 'render-com'
+    preset: 'vercel'
   },
   routeRules: {
-    // Don't add any /secret/** URLs to the sitemap.xml
+    // Don't add any /app/** URLs to the sitemap.xml
     '/app/**': { index: false },
   },
   modules: [
