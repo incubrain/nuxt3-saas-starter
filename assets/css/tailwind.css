@@ -7,10 +7,10 @@
 
 @layer base {
   :root {
-    --nav-height-mobi: 40px;
-    --nav-height-sm: 46px;
-    --nav-height-md: 50px;
-    --nav-height-lg: 60px;
+    --nav-h-mobi: 40px;
+    --nav-h-sm: 46px;
+    --nav-h-md: 50px;
+    --nav-h-lg: 60px;
 
     --max-w-sm: 600px;
     --max-w-md: 900px;
@@ -46,7 +46,7 @@
     @apply bg-zinc-200 dark:bg-zinc-900;
   }
   .border-color {
-    @apply border-zinc-300 dark:border-zinc-700;
+    @apply border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-300;
   }
   /* 
   Consider these

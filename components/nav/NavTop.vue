@@ -1,29 +1,36 @@
 <template>
   <nav
-    class="flex items-center md:items-stretch w-full justify-end md:justify-between border-b border-color foreground shadow relative z-50 px-4 h-[var(--nav-height-sm)] md:h-[var(--nav-height-md)] lg:h-[var(--nav-height-lg)]"
+    class="flex items-center md:items-stretch w-full justify-end md:justify-between border-b border-color foreground shadow relative z-50 px-4 h-[var(--nav-h-sm)] md:h-[var(--nav-h-md)] lg:h-[var(--nav-h-lg)]"
   >
     <div
       class="grid grid-cols-[minmax(160px,1fr)_minmax(1fr,420px)_minmax(160px,220px)] gap-6 items-center w-full md:flex justify-between"
     >
+      <div class="flex md:hidden h-full items-center col-start-1 col-span-2 md:col-span-1">
+        <AppBackButton />
+      </div>
       <!-- logo -->
-      <div class="h-full flex items-center col-start-1 col-span-2 md:col-span-1">
+      <div class="hidden md:flex h-full items-center col-start-1 col-span-2 md:col-span-1">
         <NuxtLink to="/">
           <h1 class="text-xl md:text-2xl block font-semibold mr-4"> Business </h1>
         </NuxtLink>
         <div
-          class="hidden md:flex gap-4 pl-4 justify-center border-l border-color items-center h-full leading-none text-sm whitespace-nowrap"
+          v-show="!isAppRoute"
+          class="flex gap-4 pl-4 justify-center border-l border-color items-center h-full leading-none text-sm whitespace-nowrap"
         >
-          <NuxtLink to="/features" class="nav-link"> Features </NuxtLink>
-          <NuxtLink to="/about" class="nav-link"> About </NuxtLink>
-          <NuxtLink to="/pricing" class="nav-link"> Pricing </NuxtLink>
+          <NuxtLink v-for="link in navItems" :key="link.id" :to="link.slug" class="nav-link">
+            {{ link.name }}
+          </NuxtLink>
         </div>
       </div>
       <div class="col-start-3 col-span-1 flex w-full relative">
-        <div class="flex gap-4 w-full h-full items-center justify-end">
+        <div v-if="!isAppRoute" class="flex gap-4 w-full h-full items-center justify-end">
           <AppThemeSwitch />
           <NuxtLink to="/auth/login" class="nav-link">
             <UButton color="primary" icon="i-heroicons-forward"> Join </UButton>
           </NuxtLink>
+        </div>
+        <div v-else class="flex w-full h-full items-center justify-end">
+          <NavAppProfile img-src="test" />
         </div>
       </div>
     </div>
@@ -31,7 +38,12 @@
 </template>
 
 <script setup>
+import navItems from './nav-items.json'
 const route = useRoute()
+
+const isAppRoute = computed(() => route.path.includes('/app'))
+
+console.log('isAppRoute', route, isAppRoute)
 
 // const { logout, session } = useAuth()
 

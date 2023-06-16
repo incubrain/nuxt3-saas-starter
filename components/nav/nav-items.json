@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "name": "Features",
+    "slug": "/features",
+    "icon": "i-material-symbols-location-on-rounded",
+    "children": []
+  },
+  {
+    "id": 1,
+    "name": "About",
+    "slug": "/about",
+    "icon": "i-material-symbols-location-on-rounded",
+    "children": []
+  },
+  {
+    "id": 2,
+    "name": "Pricing",
+    "slug": "/pricing",
+    "icon": "i-material-symbols-location-on-rounded",
+    "children": []
+  },
+  {
+    "id": 3,
+    "name": "App",
+    "slug": "/app/",
+    "icon": "i-material-symbols-location-on-rounded",
+    "children": []
+  }
+]

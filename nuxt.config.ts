@@ -51,8 +51,10 @@ export default defineNuxtConfig({
     preset: 'vercel-edge'
   },
   routeRules: {
+    // all routes (by default) will be revalidated every 60 seconds, in the background
+    '/**': { isr: 60 },
     // Don't add any /app/** URLs to the sitemap.xml, app renders on client side.
-    '/app/**': { index: false, ssr: false }
+    '/app/**': { index: false, ssr: false, isr: false }
   },
   modules: [
     '@nuxthq/ui',

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UInput v-model="query" placeholder="Filter people..." />
+    <UInput v-model="query" placeholder="Filter people..." class="p-4" />
     <UTable v-model="selected" :rows="filteredRows" :columns="columns">
       <template #name-data="{ row }">
         <span

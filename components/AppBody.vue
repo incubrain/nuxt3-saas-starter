@@ -1,18 +1,17 @@
 <template>
   <div
     ref="scrollContainer"
-    class="w-full relative overflow-y-scroll"
-    :class="{
-      'h-full': !hasNavs,
-      'h-[calc(100vh-var(--nav-height-sm))] md:h-[calc(100vh-var(--nav-height-md))] lg:h-[calc(100vh-var(--nav-height-lg))]': hasNavs
-    }"
+    :class="
+      hasNavs
+        ? 'w-full relative overflow-y-scroll h-[calc(100vh-calc(var(--nav-h-sm)+var(--nav-h-mobi)))] md:h-[calc(100vh-var(--nav-h-md))] lg:h-[calc(100vh-var(--nav-h-lg))] min-h-[calc(100vh-calc(var(--nav-h-sm)+var(--nav-h-mobi)))] md:min-h-[calc(100vh-var(--nav-h-md))] lg:min-h-[calc(100vh-var(--nav-h-lg))]'
+        : 'w-full relative overflow-y-scroll h-full'
+    "
   >
     <slot />
   </div>
 </template>
 
 <script setup lang="ts">
-
 defineProps({
   hasNavs: {
     type: Boolean,

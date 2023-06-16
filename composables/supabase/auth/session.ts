@@ -1,5 +1,6 @@
 export const getCurrent = async () => {
   const client = useSupabase()
+  // Get the auth session.
   const {
     data: { session },
     error
@@ -14,7 +15,6 @@ export const getCurrent = async () => {
 export const refresh = async () => {
   const client = useSupabase()
   const { data, error } = await client.auth.refreshSession()
-  const { session, user } = data
 
   return {
     data,

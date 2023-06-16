@@ -1,9 +1,10 @@
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full relative">
     <NavTop />
-    <AppBody class="p-4">
+    <AppBody has-navs class="p-4">
       <slot />
     </AppBody>
+    <NavMobi class="flex md:hidden" />
   </div>
 </template>
 
