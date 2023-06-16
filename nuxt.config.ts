@@ -51,8 +51,8 @@ export default defineNuxtConfig({
     preset: 'vercel'
   },
   routeRules: {
-    // Don't add any /app/** URLs to the sitemap.xml
-    '/app/**': { index: false },
+    // Don't add any /app/** URLs to the sitemap.xml, app renders on client side.
+    '/app/**': { index: false, ssr: false },
   },
   modules: [
     '@nuxthq/ui',
