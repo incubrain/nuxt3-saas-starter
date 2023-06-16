@@ -22,7 +22,7 @@ export default defineStore('users', {
           .select('id, given_name, surname, username, avatar, introduction')
 
         if (error) throw error
-        this.users = validateWithZod(z.User, data)
+        this.users = validateWithZod(z.UserValidation, data)
       } catch (err) {
         console.error('error getting items', err)
       }

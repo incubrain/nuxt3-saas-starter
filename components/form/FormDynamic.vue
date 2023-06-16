@@ -8,7 +8,7 @@
         :id="field.name"
         :as="field.as"
         :name="field.name"
-        :rules="(value) => validateWithZod(field.name, value)"
+        :rules="(value) => validateFormWithZod(field.name, value)"
         class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-sm placeholder:text-gray-300 dark:placeholder-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100"
         :placeholder="field.label"
       />
@@ -37,7 +37,7 @@ const p = defineProps({
   }
 })
 
-const validateWithZod = (fieldName, value) => {
+const validateFormWithZod = (fieldName, value) => {
   try {
     p.schemaValidation.shape[fieldName].parse(value)
     return true
