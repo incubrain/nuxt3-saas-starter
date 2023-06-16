@@ -58,6 +58,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@unlighthouse/nuxt',
     'nuxt-security',
+    '@nuxtjs/robots',
     '@nuxtjs/supabase',
     [
       '@pinia/nuxt',
@@ -69,6 +70,9 @@ export default defineNuxtConfig({
   partytown: {
     // For google analytics
     forward: ['dataLayer.push']
+  },
+  robots: {
+    configPath: '~/robots.config.ts'
   },
   runtimeConfig: {
     // Keys within public, will be also exposed to the client-side
