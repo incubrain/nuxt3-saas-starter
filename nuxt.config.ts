@@ -50,6 +50,10 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'render-com'
   },
+  routeRules: {
+    // Don't add any /secret/** URLs to the sitemap.xml
+    '/app/**': { index: false },
+  },
   modules: [
     '@nuxthq/ui',
     '@nuxt/content',
@@ -58,7 +62,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@unlighthouse/nuxt',
     'nuxt-security',
-    '@nuxtjs/robots',
+    'nuxt-simple-sitemap',
     '@nuxtjs/supabase',
     [
       '@pinia/nuxt',
@@ -71,12 +75,10 @@ export default defineNuxtConfig({
     // For google analytics
     forward: ['dataLayer.push']
   },
-  robots: {
-    configPath: '~/robots.config.ts'
-  },
   runtimeConfig: {
     // Keys within public, will be also exposed to the client-side
     public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
       SUPABASE_URL: process.env.SUPABASE_URL,
       SUPABASE_KEY: process.env.SUPABASE_KEY
     },

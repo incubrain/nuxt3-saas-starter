@@ -37,8 +37,6 @@ const p = defineProps({
   }
 })
 
-console.log('zzzz', p.schema)
-
 const validateWithZod = (fieldName, value) => {
   try {
     p.schemaValidation.shape[fieldName].parse(value)
