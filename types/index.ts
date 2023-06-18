@@ -5,6 +5,11 @@ import * as validation from './zod'
 export type Role = z.infer<typeof validation.RoleValidation>
 export type User = z.infer<typeof validation.UserValidation>
 
+// Notification Types
+export type Toast = z.infer<typeof validation.ToastValidation>
+export type ToastAction = z.infer<typeof validation.ToastActionValidation>
+export type ToastState = z.infer<typeof validation.ToastStateValidation>
+
 // Form Types
 export type LoginForm = z.infer<typeof validation.LoginValidation>
 export type RegisterForm = z.infer<typeof validation.RegisterValidation>

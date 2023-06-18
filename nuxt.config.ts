@@ -92,7 +92,7 @@ export default defineNuxtConfig({
   },
   ssr: true,
   ui: {
-    icons: ['mdi', 'heroicons', 'material-symbols']
+    icons: ['mdi', 'heroicons', 'material-symbols'],
   },
   content: {
     // Nuxt content options

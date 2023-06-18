@@ -1,6 +1,11 @@
 <template>
   <div>
-    <UInput v-model="query" placeholder="Filter people..." class="p-4" />
+    <div>
+      <UInput v-model="query" placeholder="Filter people..." class="p-4" />
+      <AppToast id="123" title="Hello World" description="I am awesome and can be used for so many things....">
+        Test Notification
+      </AppToast>
+    </div>
     <UTable v-model="selected" :rows="filteredRows" :columns="columns">
       <template #name-data="{ row }">
         <span

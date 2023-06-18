@@ -2,6 +2,10 @@
 export default defineAppConfig({
   title: 'Nuxt 3 SaaS Starter',
   ui: {
-    primary: 'sky'
+    primary: 'sky',
+    notifications: {
+      // Show toasts at the top right of the screen
+      position: 'bottom-0 right-0'
+    }
   }
 })

@@ -1,5 +1,6 @@
 import * as forms from './forms'
 import * as users from './users'
+import * as toasts from './toasts'
 
 // Forms
 export const LoginValidation = forms.LoginValidation
@@ -17,3 +18,8 @@ export const CheckboxOptionValidation = forms.CheckboxOptionValidation
 // Users
 export const UserValidation = users.UserValidation
 export const RoleValidation = users.RoleValidation
+
+// Toasts
+export const ToastValidation = toasts.ToastValidator
+export const ToastStateValidation = toasts.ToastStateValidator
+export const ToastActionValidation = toasts.ToastActionValidator
