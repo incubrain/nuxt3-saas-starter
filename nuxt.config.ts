@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   },
   css: ['/assets/css/tailwind.css'],
   imports: {
-    dirs: ['stores', 'data']
+    dirs: ['stores', 'data', 'utils']
   },
   typescript: {
     shim: false,
@@ -61,7 +61,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/partytown',
     '@nuxt/devtools',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     '@unlighthouse/nuxt',
     'nuxt-security',
     'nuxt-simple-sitemap',
