@@ -1,10 +1,6 @@
-// import pinia
-import { defineStore } from 'pinia'
 import { ToastState } from '~/types'
 
-// useToastStore.ts
 export const useToastStore = defineStore('toast', {
-  // unique id of the store across your application
   state: (): ToastState => ({
     toasts: []
   }),
