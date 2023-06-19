@@ -1,5 +1,5 @@
 // store/data.js
-import { validateWithZod } from './utils/validation'
+import { validateWithZod } from '../utils/validation'
 import * as z from '@/types/zod'
 import * as t from '@/types'
 
@@ -8,7 +8,7 @@ type AppState = {
   error: Error | null
 }
 
-export default defineStore('users', {
+export default defineStore('useUsers', {
   state: (): AppState => ({
     users: [] as t.User[],
     error: null

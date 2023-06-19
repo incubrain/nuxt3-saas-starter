@@ -22,10 +22,18 @@
     <UButton
       class="w-full mt-6 flex justify-center items-center gap-4"
       color="white"
-      @click="handleGoogleSignIn"
+      @click="handleProviderSignIn('google')"
     >
       <NuxtImg src="/icons/google.svg" alt="Google Logo" width="28px" />
       Sign In with Google
+    </UButton>
+    <UButton
+      class="w-full mt-6 flex justify-center items-center gap-4"
+      color="white"
+      @click="handleProviderSignIn('github')"
+    >
+      <UIcon name="i-mdi-github" alt="Github Logo" width="28px" />
+      Sign In with Github
     </UButton>
   </div>
 </template>
@@ -41,9 +49,9 @@ const handleLogin = (value: { email: string; password: string }) => {
   auth.login.withEmail(value.email, value.password)
 }
 
-async function handleGoogleSignIn() {
+async function handleProviderSignIn(provider) {
   try {
-    const { data, error } = await auth.login.withOAuth('google')
+    const { data, error } = await auth.login.withOAuth(provider)
 
     if (error) throw error
     console.log('User logged in via Google', data)

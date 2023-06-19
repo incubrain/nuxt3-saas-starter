@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed left-0 w-full hidden lg:relative h-full flex-col foreground lg:flex py-8 pl-8">
+  <div class="fixed left-0 w-full hidden lg:relative h-full flex-col foreground lg:flex py-8 pl-8 border-r border-color">
     <ul class="w-full">
       <li
         v-for="page in navItems"

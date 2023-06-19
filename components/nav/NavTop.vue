@@ -29,8 +29,19 @@
             <UButton color="primary" icon="i-heroicons-forward"> Join </UButton>
           </NuxtLink>
         </div>
-        <div v-else class="flex w-full h-full items-center justify-end">
-          <NavAppProfile img-src="test" />
+        <div v-else class="flex gap-4 w-full h-full items-center justify-end">
+          <AppThemeSwitch />
+          <NavAppProfile
+            :img-src="
+              getImageURL({
+                bucket: 'profile-public',
+                folderPath: `${user.id}/avatar`,
+                file: user.avatar,
+                isPrivate: false,
+                transform: { width: 100, height: 100 }
+              })
+            "
+          />
         </div>
       </div>
     </div>
@@ -39,7 +50,10 @@
 
 <script setup>
 import navItems from './nav-items.json'
+import { getImageURL } from '@/composables/supabase/get/image'
 const route = useRoute()
+
+const user = useSupabaseUser()
 
 const isAppRoute = computed(() => route.path.includes('/app'))
 
