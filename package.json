@@ -45,6 +45,9 @@
     "zod": "^3.21.4"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.18"
+    "@heroicons/vue": "^2.0.18",
+    "drizzle-orm": "^0.27.0",
+    "postgres": "^3.3.5",
+    "winston": "^3.9.0"
   }
 }
