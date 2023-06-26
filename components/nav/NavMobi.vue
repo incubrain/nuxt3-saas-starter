@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import navItems from './app-nav-items.json'
+import navItems from './routes/app.json'
 
 // const route = useRoute()
 </script>

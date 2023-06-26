@@ -49,7 +49,7 @@
 </template>
 
 <script setup>
-import navItems from './nav-items.json'
+import navItems from './routes/website.json'
 import { getImageURL } from '@/composables/supabase/get/image'
 const route = useRoute()
 

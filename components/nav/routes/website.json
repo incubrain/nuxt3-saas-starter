@@ -10,7 +10,7 @@
     "id": 1,
     "name": "About",
     "slug": "/about",
-    "icon": "i-material-symbols-location-on-rounded",
+    "icon": "i-material-symbols-info",
     "children": []
   },
   {
@@ -23,8 +23,17 @@
   {
     "id": 3,
     "name": "App",
-    "slug": "/app/",
+    "slug": "/app",
     "icon": "i-material-symbols-location-on-rounded",
     "children": []
+  },
+  {
+    "id": 4,
+    "name": "Tests",
+    "slug": "/tests",
+    "icon": "i-material-symbols-location-on-rounded",
+    "children": [
+      { "id": 41, "name": "api", "slug": "/tests/api", "icon": "i-material-symbols-location-on-rounded"}
+    ]
   }
 ]

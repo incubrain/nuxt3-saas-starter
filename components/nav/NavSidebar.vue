@@ -1,5 +1,7 @@
 <template>
-  <div class="fixed left-0 w-full hidden lg:relative h-full flex-col foreground lg:flex py-8 pl-8 border-r border-color">
+  <div
+    class="fixed left-0 w-full hidden lg:relative h-full flex-col foreground lg:flex py-8 pl-8 border-r border-color"
+  >
     <ul class="w-full">
       <li
         v-for="page in navItems"
@@ -17,10 +19,7 @@
                 : 'w-full p-3 flex items-center justify-start gap-3 rounded-[.5rem_0_0_.5rem] text-sm'
             "
           >
-            <UIcon
-              :name="page.icon"
-              class="w-[20px] h-[20px]"
-            />
+            <UIcon :name="page.icon" class="w-[20px] h-[20px]" />
             {{ page.name }}
           </span>
         </NuxtLink>
@@ -30,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import navItems from './app-nav-items.json'
+import navItems from './routes/app.json'
 
 const route = useRoute()
 </script>
