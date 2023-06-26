@@ -1,33 +1,19 @@
 <template>
-  <Layout>
-    <Seo
-      :templateTitle="frontmatter.title"
-      :description="frontmatter.description"
-      isBlog
-      :banner="OG_BANNER_LINK"
-      :date="new Date(frontmatter.lastUpdated ?? frontmatter.publishedAt).toISOString()"
-      :canonical="frontmatter.repost"
-    />
-
-    <main>
-      <!-- The rest of your template code -->
-    </main>
-  </Layout>
+  <div class="flex items-center flex-col">
+    <h1 class="my-20 text-3xl font-semibold">Incubrain Blog</h1>
+    <div
+      class="grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:gap-8 xl:grid-cols-4"
+    >
+      <BlogCard />
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-
-const route = useRoute()
-
-let frontmatter = ref(null)
-let recommendations = ref(null)
-
-async function fetchData() {
-  const slug = route.params.slug
-  const post = await fetch(`/api/blog/${slug}`).then((res) => res.json())
-  frontmatter.value = post.frontmatter
-  recommendations.value = await fetch(`/api/blog/recommendations/${slug}`).then((res) => res.json())
-}
-
-onMounted(fetchData)
+definePageMeta({
+  name: 'Blog',
+  layout: 'blog'
+})
 </script>
+
+<style scoped></style>

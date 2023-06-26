@@ -1,72 +1,55 @@
 <template>
-  <li 
-    :class="[
-      'w-full rounded-md border foreground',
-      'scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu',
-      'transition duration-100',
-      'motion-reduce:hover:scale-100',
-      'animate-shadow',
-      className
-    ]"
-    @click="onClick"
-  >
-    <nuxt-link
-      class="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
-      :to="`/blog/${post.slug}`"
-    >
-      <div class="relative">
-        <!-- CloudinaryImg component code here -->
-        <div
-          :class="[
-            'absolute bottom-0 w-full px-4 py-2',
-            'mt-2 flex flex-wrap justify-end gap-x-2 gap-y-1 text-sm'
-          ]"
-        >
-          <Tag
-            v-for="tag in post.tags.split(',')"
-            :key="tag"
-            class="bg-opacity-80 dark:!bg-opacity-60"
-            :tabindex="-1"
+  <div v-for="post in posts" :key="post.id">
+    <NuxtLink :to="`/${p.baseFolder}/${post.category}/${post.id}`">
+      <div
+        class="relative w-full h-full rounded-md foreground hover:bg-[#F9FAFB] hover:shadow-md cursor-pointer flex flex-col gap-2 p-4 overflow-hidden"
+      >
+        <!-- :alt="post.meta.featured_alt" -->
+        <NuxtImg
+          class="w-full object-cover rounded-md"
+          :src="post.featured_image"
+          width="400"
+          height="400"
+        />
+        <div class="flex flex-col gap-2 items-start w-full justify-center">
+          <h3 class="text-md lg:text-2xl font-bold">
+            {{ post.title }}
+          </h3>
+          <div
+            class="flex flex-row gap-2 lg:gap-3 justify-center items-center font-semibold text-[#333c7d]"
           >
-            <Accent v-if="checkTagged?.(tag)">{{ tag }}</Accent>
-            <template v-else>{{ tag }}</template>
-          </Tag>
+            <p>{{ post.updated }}</p>
+            <UBadge size="md">
+              {{ post.category }}
+            </UBadge>
+            <!-- <div class="w-1 h-1 rounded-full bg-black" /> -->
+          </div>
+          <p class="hidden xl:flex text-sm">
+            {{ post.excerpt }}
+          </p>
         </div>
       </div>
-      <div class="p-4">
-        <h4 class="">{{ post.title }}</h4>
-        <div class="mt-2 flex items-center justify-start gap-2 text-sm font-medium">
-          <div class="flex items-center gap-1">
-            <HiOutlineClock class="inline-block text-base" />
-            <Accent>{{ post.readingTime.text }}</Accent>
-          </div>
-          <div class="flex items-center gap-1">
-            <HiOutlineEye class="inline-block text-base" />
-            <Accent>{{ post?.views?.toLocaleString() ?? '–––' }} views</Accent>
-          </div>
-        </div>
-        <p class="mb-2 mt-4 text-sm">
-          <span class="font-bold ">
-            {{ formatDate(post.lastUpdated ?? post.publishedAt) }}
-          </span>
-        </p>
-        <p class="text-sm">
-          {{ post.description }}
-        </p>
-      </div>
-    </nuxt-link>
-  </li>
+    </NuxtLink>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { format } from 'date-fns'
+const p = defineProps({
+  baseFolder: {
+    type: String,
+    default: 'blog'
+  },
+  category: {
+    type: String,
+    default: 'all'
+  }
+})
 
-const post = ref({})
-const className = ref('')
-const checkTagged = ref((tag) => false)
-const onClick = ref(() => {})
+const posts = ref()
 
-const formatDate = (dateString) => format(new Date(dateString), 'MMMM dd, yyyy')
-
-// Other setup script code here
+if (p.category === 'all') {
+  posts.value = await queryContent(p.baseFolder).skip(0).limit(10).find()
+} else {
+  posts.value = await queryContent(p.baseFolder, p.category).skip(0).limit(10).find()
+}
 </script>

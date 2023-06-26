@@ -11,7 +11,7 @@
       <!-- logo -->
       <div class="hidden md:flex h-full items-center col-start-1 col-span-2 md:col-span-1">
         <NuxtLink to="/">
-          <h1 class="text-xl md:text-2xl block font-semibold mr-4"> Business </h1>
+          <h1 class="text-xl md:text-2xl block font-semibold mr-4"> Incubrain </h1>
         </NuxtLink>
         <div
           v-show="!isAppRoute"

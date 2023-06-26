@@ -22,8 +22,15 @@
   },
   {
     "id": 3,
+    "name": "Blog",
+    "slug": "/blog",
+    "icon": "i-material-symbols-location-on-rounded",
+    "children": []
+  },
+  {
+    "id": 4,
     "name": "App",
-    "slug": "/app/",
+    "slug": "/app",
     "icon": "i-material-symbols-location-on-rounded",
     "children": []
   }
