@@ -44,7 +44,8 @@ export default defineNuxtConfig({
       compilerOptions: {
         strict: true,
         types: ['@sentry/vue']
-      }
+      },
+      module: 'esnext',
     }
   },
   nitro: {
