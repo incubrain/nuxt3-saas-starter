@@ -16,6 +16,13 @@
     --max-w-md: 900px;
     --max-w-lg: 1140px;
   }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
 }
 
 @layer components {
