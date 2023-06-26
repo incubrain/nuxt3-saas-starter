@@ -4,7 +4,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
   const dsn = process.env.SENTRY_DSN
   const environment = process.env.NODE_ENV
-  console.log('environment: ', environment)
   const router = useRouter()
   Sentry.init({
     app,

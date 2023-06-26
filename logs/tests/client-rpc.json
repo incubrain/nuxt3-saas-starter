@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2023-06-21T09:51:03.541Z",
+    "method": "POST",
+    "url": "/api/log/to-json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "responseTime": 427,
+    "statusCode": 200,
+    "responseBody": {}
+  },
+  {
+    "timestamp": "2023-06-21T09:51:11.287Z",
+    "method": "POST",
+    "url": "/api/log/to-json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "responseTime": 175,
+    "statusCode": 200,
+    "responseBody": {}
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "timestamp": "2023-06-21T09:50:11.847Z",
+    "method": "POST",
+    "url": "/api/log/to-json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "responseTime": 1238,
+    "statusCode": 200,
+    "responseBody": {}
+  },
+  {
+    "timestamp": "2023-06-21T09:51:25.808Z",
+    "method": "POST",
+    "url": "/api/log/to-json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "responseTime": 377,
+    "statusCode": 200,
+    "responseBody": {}
+  },
+  {
+    "timestamp": "2023-06-21T09:51:32.096Z",
+    "method": "POST",
+    "url": "/api/log/to-json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "responseTime": 1310,
+    "statusCode": 200,
+    "responseBody": {}
+  }
+]

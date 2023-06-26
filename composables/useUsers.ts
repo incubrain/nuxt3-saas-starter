@@ -26,6 +26,19 @@ export default defineStore('useUsers', {
       } catch (err) {
         console.error('error getting items', err)
       }
+    },
+    async getManyUsers() {
+      const client = useSupabase()
+      try {
+        const { data, error } = await client.rpc('get_users_many', {
+          p_user_id: 1
+        })
+
+        if (error) throw error
+        this.users = validateWithZod(z.UserValidation, data)
+      } catch (err) {
+        console.error('error getting items', err)
+      }
     }
   }
 })
