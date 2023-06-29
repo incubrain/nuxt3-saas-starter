@@ -1,0 +1,68 @@
+[
+  {
+    "timestamp": "2023-06-29T14:44:05.504Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 1752,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T14:48:10.817Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 2743,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:17:50.644Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 543,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:19:22.483Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 672,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:20:58.142Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 94,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:24:11.890Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 548,
+    "statusCode": 200,
+    "responseBody": null
+  }
+]

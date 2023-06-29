@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { H3Event } from 'h3'
 
-const createLogEntry = (event: H3Event) => {
+export const createLogEntry = (event: H3Event) => {
   const {
     node: { req }
   } = event
@@ -13,7 +13,10 @@ const createLogEntry = (event: H3Event) => {
     clientIP: req.socket.remoteAddress,
     userAgent: req.headers['user-agent'],
     error: null,
-    stackTrace: null
+    stackTrace: null,
+    responseTime: null,
+    statusCode: 200,
+    responseBody: null
   }
   return logEntry
 }

@@ -18,16 +18,16 @@
 </template>
 
 <script setup lang="ts">
-const serverFile = 'server-rpc.json'
-const clientFile = 'client-rpc.json'
+const serverFile = 'server-rpc'
+const clientFile = 'client-rpc'
 
 const nuxtServerLoggedData = ref([])
 const nuxtClientLoggedData = ref([])
 
 const getNuxtServerLoggedData = async () => {
-  const { data, error } = await useFetch('/api/log/from-json?fileName=' + serverFile)
-  console.log('data', data.value.body)
-  if (error) {
+  const { data, error } = await useFetch('/api/log/from-storage?fileName=' + serverFile)
+  console.log('data', data, error)
+  if (error.value !== null) {
     console.log('error', error)
     return
   }
@@ -35,29 +35,28 @@ const getNuxtServerLoggedData = async () => {
 }
 
 const getNuxtClientLoggedData = async () => {
-  const { data, error } = await useFetch('/api/log/from-json?fileName=' + clientFile)
-  if (error) {
+  const { data, error } = await useFetch('/api/log/from-storage?fileName=' + clientFile)
+  if (error.value !== null) {
     console.log('error', error)
     return
   }
-  nuxtClientLoggedData.value = data
+  nuxtClientLoggedData.value = data.value.body
 }
 
 const testNuxtServer = async () => {
   const start = Date.now()
-  const { data, error } = useApi('/api/tests/rpc')
-  console.log('data', data)
-
-  const duration = end - start
+  const { data, error } = await useFetch('/api/tests/rpc')
+  const end = Date.now()
+  console.log('data', data, error)
 
   // Log API call
   const logData = {
     fileName: serverFile,
     data: {
-      duration
+      duration: end - start
     }
   }
-  // await useFetch('/api/log/to-json', { method: 'POST', body: JSON.stringify(logData) })
+  await useFetch('/api/log/to-storage', { method: 'POST', body: logData })
 }
 
 const testNuxtClient = async () => {
@@ -75,12 +74,10 @@ const testNuxtClient = async () => {
       duration
     }
   }
-  // await useAsyncData('item', () =>
-  //   $fetch('/api/log/to-json', {
-  //     method: 'POST',
-  //     body: JSON.stringify(logData)
-  //   })
-  // )
+  await useFetch('/api/log/to-storage', {
+    method: 'POST',
+    body: JSON.stringify(logData)
+  })
 }
 </script>
 

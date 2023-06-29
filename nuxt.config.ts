@@ -11,6 +11,21 @@ export default defineNuxtConfig({
     corsHandler: false,
     headers: false
   },
+  nitro: {
+    // Production
+    storage: {
+      data: {
+        driver: 'localStorage'
+      }
+    },
+    // Development
+    devStorage: {
+      data: {
+        driver: 'fs',
+        base: './data/kv'
+      }
+    }
+  },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -45,11 +60,8 @@ export default defineNuxtConfig({
         strict: true,
         types: ['@sentry/vue']
       },
-      module: 'esnext',
+      module: 'esnext'
     }
-  },
-  nitro: {
-    preset: 'vercel-edge'
   },
   routeRules: {
     // all routes (by default) will be revalidated every 60 seconds, in the background

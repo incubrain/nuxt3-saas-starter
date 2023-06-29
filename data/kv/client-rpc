@@ -1,20 +1,24 @@
 [
   {
-    "timestamp": "2023-06-21T09:51:03.541Z",
+    "timestamp": "2023-06-29T14:57:26.143Z",
     "method": "POST",
     "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "responseTime": 427,
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 914,
     "statusCode": 200,
-    "responseBody": {}
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T09:51:11.287Z",
+    "timestamp": "2023-06-29T15:24:22.304Z",
     "method": "POST",
     "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "responseTime": 175,
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 169,
     "statusCode": 200,
-    "responseBody": {}
+    "responseBody": null
   }
 ]

@@ -11,7 +11,12 @@
 <script setup lang="ts">
 import links from '@/components/nav/routes/website.json'
 
-const navItems = ref(links.find((item) => item.id === 4))
+console.log(
+  'testLinks',
+  links.find((item) => item.id === 4)
+)
+
+const navItems = ref(links.find((item) => item.id === 5))
 
 console.log('links', navItems.value)
 </script>
