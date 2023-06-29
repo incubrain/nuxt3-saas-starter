@@ -1,5 +1,4 @@
 import * as winston from 'winston'
-// Creating a logger instance
 
 const logLevels = {
   error: 0,
