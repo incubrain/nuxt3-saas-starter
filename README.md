@@ -9,7 +9,7 @@ projects until its completion. For updates, you can follow our progress in the t
 - [💚 Nuxt 3](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules,
   layouts etc.
 
-- ⚡️ Vite - Instant HMR.
+- ⚡️ [Vite](https://vitejs.dev/) - Instant HMR.
 
 - 🎨 [Tailwind CSS](https://tailwindcss.com) - The gold standard CSS utility framework
 
@@ -19,21 +19,21 @@ projects until its completion. For updates, you can follow our progress in the t
 
 - 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts).
 
-- 🏎 Vercel for easy hosting.
+- 🌐 Vercel for easy hosting.
 
-- 🏎 [Sentry/Vue](https://docs.sentry.io/platforms/javascript/guides/vue/) for error and performance monitoring.
+- ⚠️ [Sentry/Vue](https://docs.sentry.io/platforms/javascript/guides/vue/) for error and performance monitoring.
 
-- 🏎 Payments, using Stripe Billing.
+- 🤑 [Stripe](https://stripe.com/docs/js) Billing for payments.
 
-- 🏎 Supabase, for Auth, storage, database and realtime needs.
+- 🏗️ [Supabase](https://supabase.com/) for Auth, storage, database and realtime needs.
 
-- 🏎 SEO Optimized, unlighthouse included for SEO tracking.
+- 📖 SEO Optimized, [unlighthouse](https://unlighthouse.dev/) included for SEO tracking.
 
-- 🏎 Data validation, incoming data validated with Zod.
+- 👮‍♂️ Data validation, incoming data validated with [Zod](https://zod.dev/), forms with [vee-validate](https://vee-validate.logaretm.com/v4/).
 
-- 🏎 Secure, uses Nuxt/Security to enhance application security.
+- 🔒 Secure, uses [Nuxt/Security](https://nuxt-security.vercel.app/) to enhance application security.
 
-- 🏎 light/dark mode.
+- 🌗 light/dark mode.
 
 - 🦾 TypeScript, of course.
 
