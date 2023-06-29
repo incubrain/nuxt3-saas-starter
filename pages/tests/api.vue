@@ -18,8 +18,8 @@
 </template>
 
 <script setup lang="ts">
-const serverFile = 'server-rpc'
-const clientFile = 'client-rpc'
+const serverFile = 'server.json'
+const clientFile = 'client.json'
 
 const nuxtServerLoggedData = ref([])
 const nuxtClientLoggedData = ref([])
@@ -65,18 +65,16 @@ const testNuxtClient = async () => {
   await users.getManyUsers()
   const end = Date.now()
 
-  const duration = end - start
-
   // Log API call
   const logData = {
     fileName: clientFile,
     data: {
-      duration
+      duration: end - start
     }
   }
   await useFetch('/api/log/to-storage', {
     method: 'POST',
-    body: JSON.stringify(logData)
+    body: logData
   })
 }
 </script>

@@ -1,6 +1,5 @@
-import * as fs from 'fs'
-import * as path from 'path'
 import { H3Event } from 'h3'
+import { stringify } from 'flatted'
 
 export const createLogEntry = (event: H3Event) => {
   const {
@@ -18,38 +17,52 @@ export const createLogEntry = (event: H3Event) => {
     statusCode: 200,
     responseBody: null
   }
+
+  logger.info(`Log entry created for request: ${logEntry.method} ${logEntry.url}`)
+
   return logEntry
 }
 
 // Middleware to log API call details
 export default defineEventHandler(async (event) => {
+  // stringify used because event is a circular object
+  logger.info(`Starting logging middleware for event: ${stringify(event.node.req.headers['accept-language'])}`)
+
   const logEntry = createLogEntry(event)
-  const filePath = './logs/server.json'
+  const fileName = 'server.json'
 
   try {
-    // Ensure the directory exists
-    await fs.promises.mkdir(path.dirname(filePath), { recursive: true })
+    // Initiate storage
+    const storage = useStorage('data')
 
-    let json = []
+    let newFile = []
     // Check if the file exists and is not empty before reading
-    if (fs.existsSync(filePath) && fs.statSync(filePath).size > 0) {
-      const fileData = await fs.promises.readFile(filePath, 'utf-8')
-      json = JSON.parse(fileData)
+    const hasItem = await storage.hasItem(fileName)
+    if (hasItem) {
+      logger.info(`Log file "${fileName}" exists. Reading data.`)
+      const fileData = await storage.getItem(fileName)
+      newFile = fileData
+    } else {
+      logger.info(`Log file "${fileName}" does not exist. Creating new file.`)
     }
 
     // Append log entry to JSON array
-    json.push(logEntry)
+    newFile.push(logEntry)
+    logger.info('Log entry added to file data.')
 
     // Save the updated log data
-    await fs.promises.writeFile(filePath, JSON.stringify(json, null, 2))
-    logger.info(`Succesfully logged: ${logEntry.timestamp}`)
+    await storage.setItem(fileName, JSON.stringify(newFile, null, 2))
+    logger.info(
+      `Successfully logged request data for ${logEntry.method} ${logEntry.url} at ${logEntry.timestamp}`
+    )
   } catch (err: any) {
     // Update log entry with error details
     logEntry.error = err.message
     logEntry.stackTrace = err.stack
 
     // Print error details
-    logger.error(`Error handling API call data: ${err.message}`)
-    console.error(logEntry)
+    logger.error(
+      `Error handling API call data: ${err.message}. Stack trace: ${logEntry.stackTrace}`
+    )
   }
 })
