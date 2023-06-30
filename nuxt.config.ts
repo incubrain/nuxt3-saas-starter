@@ -15,7 +15,8 @@ export default defineNuxtConfig({
     // Production
     storage: {
       data: {
-        driver: 'localStorage'
+        driver: 'localStorage',
+        base: 'app-data:'
       }
     },
     // Development

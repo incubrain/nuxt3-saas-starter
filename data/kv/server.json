@@ -317,5 +317,16 @@
     "responseTime": null,
     "statusCode": 200,
     "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:13:22.454Z",
+    "method": "GET",
+    "url": "/tests/api",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   }
 ]
