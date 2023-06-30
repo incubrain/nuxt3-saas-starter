@@ -460,5 +460,148 @@
     "responseTime": null,
     "statusCode": 200,
     "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:26:01.607Z",
+    "method": "GET",
+    "url": "/api/_content/cache.1688113511788.json",
+    "clientIP": "",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:26:02.998Z",
+    "method": "GET",
+    "url": "/api/_content/navigation",
+    "clientIP": "",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:34:52.619Z",
+    "method": "GET",
+    "url": "/tests/api",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:34:57.620Z",
+    "method": "POST",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:35:00.012Z",
+    "method": "GET",
+    "url": "/api/tests/rpc",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:35:00.680Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:35:00.690Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 669,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:35:24.015Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:36:44.537Z",
+    "method": "GET",
+    "url": "/api/log/from-storage?fileName=server.json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T08:36:46.937Z",
+    "method": "GET",
+    "url": "/api/log/from-storage?fileName=client.json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T09:57:26.839Z",
+    "method": "GET",
+    "url": "/tests/api",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T09:57:32.026Z",
+    "method": "POST",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T09:57:42.447Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   }
 ]

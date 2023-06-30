@@ -1,3 +1,4 @@
+import * as path from 'path'
 import * as winston from 'winston'
 
 const logLevels = {
@@ -34,8 +35,13 @@ const logger = winston.createLogger({
   format,
   transports: [
     new winston.transports.Console(),
-    new winston.transports.File({ filename: './logs/error.log', level: 'error' }),
-    new winston.transports.File({ filename: './logs/combined.log' })
+    new winston.transports.File({
+      filename: path.resolve(process.cwd(), './logs', `${process.env.NODE_ENV}-error.log`),
+      level: 'error'
+    }),
+    new winston.transports.File({
+      filename: path.resolve(process.cwd(), './logs', `${process.env.NODE_ENV}-combined.log`)
+    })
   ]
 })
 
