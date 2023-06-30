@@ -1,6 +1,5 @@
 import * as path from 'path'
 import * as winston from 'winston'
-import Sentry from 'winston-transport-sentry-node'
 
 const logLevels = {
   error: 0,
@@ -53,17 +52,9 @@ if (process.env.NODE_ENV === 'development') {
   logger.add(new winston.transports.Console())
 }
 
-// send logs to sentry in production
+// only write errors to console in production
 if (process.env.NODE_ENV === 'production') {
   logger.add(new winston.transports.Console({ format: winston.format.simple(), level: 'error' }))
-  logger.add(
-    new Sentry({
-      sentry: {
-        dsn: process.env.SENTRY_DSN
-      },
-      level: 'info'
-    })
-  )
 }
 
 export default logger

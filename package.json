@@ -43,7 +43,6 @@
     "vee-validate": "^4.10.2",
     "vitest": "^0.32.2",
     "vue-tsc": "^1.8.1",
-    "winston-transport-sentry-node": "^2.7.0",
     "zod": "^3.21.4"
   },
   "dependencies": {
