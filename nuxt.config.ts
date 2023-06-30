@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     storage: {
       logs: {
         driver: 'fs',
-        base: './data/logs'
+        base: './logs'
       }
     }
   },

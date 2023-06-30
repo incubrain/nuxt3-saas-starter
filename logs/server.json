@@ -1,1167 +1,358 @@
 [
   {
-    "timestamp": "2023-06-21T11:37:31.276Z",
+    "timestamp": "2023-06-29T15:36:05.993Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:42:47.743Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 752,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:44:05.805Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 435,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:44:54.684Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 795,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:45:17.622Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 259,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:50:47.148Z",
     "method": "GET",
     "url": "/api/tests/rpc",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:38:03.289Z",
+    "timestamp": "2023-06-29T15:50:47.738Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:50:47.750Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 605,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:57:40.114Z",
+    "method": "GET",
+    "url": "/tests/api",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T15:57:46.472Z",
+    "method": "POST",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:04:38.873Z",
     "method": "GET",
     "url": "/api/tests/rpc",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:38:17.882Z",
+    "timestamp": "2023-06-29T16:04:39.451Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:04:39.464Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 1179,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:05:37.228Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:05:37.242Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 886,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:06:28.757Z",
     "method": "GET",
     "url": "/api/tests/rpc",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:38:19.214Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T11:38:21.826Z",
+    "timestamp": "2023-06-29T16:06:29.240Z",
     "method": "POST",
-    "url": "/api/_supabase/session",
+    "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:38:55.805Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T11:39:00.941Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T11:39:03.164Z",
+    "timestamp": "2023-06-29T16:06:29.254Z",
     "method": "POST",
-    "url": "/api/_supabase/session",
+    "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": 495,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:56:57.582Z",
+    "timestamp": "2023-06-29T16:07:48.789Z",
     "method": "GET",
-    "url": "/tests/api",
+    "url": "/api/log/from-storage?fileName=server.json",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:57:01.662Z",
+    "timestamp": "2023-06-29T16:07:53.505Z",
+    "method": "GET",
+    "url": "/api/log/from-storage?fileName=client.json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:07:58.304Z",
     "method": "GET",
     "url": "/api/tests/rpc",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:57:05.645Z",
+    "timestamp": "2023-06-29T16:07:58.754Z",
     "method": "POST",
-    "url": "/api/_supabase/session",
+    "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T11:58:30.100Z",
+    "timestamp": "2023-06-29T16:07:58.760Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 451,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:08:07.209Z",
     "method": "GET",
     "url": "/api/tests/rpc",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T12:01:19.379Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:01:19.639Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:01:26.626Z",
+    "timestamp": "2023-06-29T16:08:07.497Z",
     "method": "POST",
-    "url": "/api/_supabase/session",
+    "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T12:02:15.424Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:02:16.814Z",
+    "timestamp": "2023-06-29T16:08:07.505Z",
     "method": "POST",
-    "url": "/api/_supabase/session",
+    "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": 285,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T12:05:03.967Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:05:08.932Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:05:10.974Z",
+    "timestamp": "2023-06-29T16:08:10.458Z",
     "method": "POST",
-    "url": "/api/_supabase/session",
+    "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T12:05:35.532Z",
+    "timestamp": "2023-06-29T16:08:15.638Z",
+    "method": "GET",
+    "url": "/api/log/from-storage?fileName=client.json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:08:21.234Z",
+    "method": "GET",
+    "url": "/api/log/from-storage?fileName=server.json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-29T16:13:22.454Z",
     "method": "GET",
     "url": "/tests/api",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-21T12:05:37.113Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:05:50.442Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:06:00.154Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc.json",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:28:46.699Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:28:49.985Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:28:58.045Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:35:20.197Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:35:25.321Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:35:27.798Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:36:19.006Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:36:32.652Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:36:38.617Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc.json",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:46:10.881Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351569983",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:46:18.233Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351577182",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:46:21.286Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351580225",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:46:24.876Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351583673",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:46:27.879Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351586882",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:46:33.766Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351592846",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:46:53.610Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351612314",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:47:09.090Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351628159",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:47:19.366Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351638150",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:47:34.584Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351653623",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:47:38.729Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351657629",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:47:46.452Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351665557",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:48:40.374Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687351717441",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:48:49.373Z",
-    "method": "GET",
-    "url": "/api/tests/rpc?t=%222023-06-21T12:48:49.365Z%22",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:50:34.567Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:50:34.674Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:50:42.026Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:50:47.921Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:50:54.471Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:50:59.825Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:03.956Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:10.442Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:17.488Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:20.268Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:25.766Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:32.615Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:48.873Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:51:55.341Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:00.291Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:04.202Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:05.682Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:09.400Z",
-    "method": "GET",
-    "url": "/__nuxt_error?url=/tests/api&statusCode=500&statusMessage&message=useSupabaseUser+is+not+defined&stack=%3Cpre%3E%3Cspan+class=%22stack%22%3Eat+C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cmiddleware%5Cauth.global.ts:4:16%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cnode_modules%5Cnuxt%5Cdist%5Cpages%5Cruntime%5Cplugins%5Crouter.js:130:61%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+fn+(C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cnode_modules%5Cnuxt%5Cdist%5Capp%5Cnuxt.js:208:44)%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+Object.callAsync+(/C:/Users/Mac/Desktop/code/portfolio/nuxt3-saas-starter/node_modules/unctx/dist/index.mjs:68:55)%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cnode_modules%5Cnuxt%5Cdist%5Capp%5Cnuxt.js:210:56%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+Object.runWithContext+(C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cnode_modules%5C@vue%5Cruntime-core%5Cdist%5Cruntime-core.cjs.js:3855:18)%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+callWithNuxt+(C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cnode_modules%5Cnuxt%5Cdist%5Capp%5Cnuxt.js:210:24)%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+Object.runWithContext+(C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cnode_modules%5Cnuxt%5Cdist%5Capp%5Cnuxt.js:32:29)%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+C:%5CUsers%5CMac%5CDesktop%5Ccode%5Cportfolio%5Cnuxt3-saas-starter%5Cnode_modules%5Cnuxt%5Cdist%5Cpages%5Cruntime%5Cplugins%5Crouter.js:130:40%3C/span%3E%0A%3Cspan+class=%22stack+internal%22%3Eat+process.processTicksAndRejections+(node:internal/process/task_queues:95:5)%3C/span%3E%3C/pre%3E",
-    "clientIP": "",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:12.618Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:20.372Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:30.526Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:32.498Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:39.115Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:55.751Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:58.440Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:52:59.958Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:53:07.098Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:53:57.195Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687352035810",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:54:43.213Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687352082043",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:54:48.184Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1687352085553",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:55:12.308Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:55:14.782Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:56:06.597Z",
-    "method": "GET",
-    "url": "/_nuxt/composables/useApi.ts?t=1687352165293",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:56:30.110Z",
-    "method": "GET",
-    "url": "/_nuxt/composables/useApi.ts?t=1687352189027",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:56:50.077Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:56:52.780Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:57:45.923Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:57:48.469Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:59:45.900Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:59:48.969Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:59:55.377Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T12:59:55.429Z",
-    "method": "GET",
-    "url": "/tests/undefined",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T13:00:09.592Z",
-    "method": "GET",
-    "url": "/_nuxt/composables/useApi.ts?t=1687352406393",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T13:00:20.379Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-21T13:00:25.967Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:12:31.438Z",
+    "timestamp": "2023-06-30T08:05:31.084Z",
     "method": "GET",
     "url": "/",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T14:12:34.710Z",
+    "timestamp": "2023-06-30T08:05:34.452Z",
     "method": "GET",
     "url": "/",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:12:35.979Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:13:10.320Z",
-    "method": "GET",
-    "url": "/",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:13:13.287Z",
-    "method": "GET",
-    "url": "/",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:13:14.336Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:13:38.331Z",
-    "method": "GET",
-    "url": "/tests",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:13:39.379Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:15:13.820Z",
-    "method": "GET",
-    "url": "/tests",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:15:16.911Z",
-    "method": "GET",
-    "url": "/tests",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:15:18.207Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:18:24.532Z",
-    "method": "GET",
-    "url": "/tests",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:18:26.572Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:18:47.129Z",
-    "method": "GET",
-    "url": "/api/_content/query?_params=%7B%22skip%22:0,%22limit%22:10,%22where%22:%5B%7B%22_path%22:%22--REGEX+/^%5C%5C/blog/%22%7D%5D,%22sort%22:%5B%7B%22_file%22:1,%22$numeric%22:true%7D%5D%7D",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:19:30.774Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:19:35.138Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:20:51.156Z",
-    "method": "GET",
-    "url": "/_nuxt/components/nav/routes/website.json?t=1688048450677&import",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:21:43.963Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:22:38.149Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/index.vue?t=1688048557776",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:23:14.787Z",
-    "method": "GET",
-    "url": "/tests",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:23:17.423Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:23:31.372Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:24:31.856Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:24:36.933Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:25:16.571Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:26:34.604Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:27:34.257Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1688048853849",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:27:42.986Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1688048862678",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:28:00.176Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1688048879767",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:28:14.421Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:28:15.011Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null
-  },
-  {
-    "timestamp": "2023-06-29T14:44:03.751Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
     "stackTrace": null,
     "responseTime": null,
     "statusCode": 200,
     "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T14:44:05.494Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:46:39.717Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:46:40.195Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:48:08.078Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:48:10.809Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:49:44.888Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:51:35.814Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:52:37.139Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:53:13.216Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=client-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:53:45.869Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=client-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:54:27.846Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=client-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:57:14.369Z",
-    "method": "GET",
-    "url": "/_nuxt/pages/tests/api.vue?t=1688050633924",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:57:26.132Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:59:12.814Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:59:16.301Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T14:59:19.164Z",
+    "timestamp": "2023-06-30T08:05:35.573Z",
     "method": "POST",
     "url": "/api/_supabase/session",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
@@ -1172,7 +363,7 @@
     "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T15:17:50.092Z",
+    "timestamp": "2023-06-30T08:05:53.323Z",
     "method": "GET",
     "url": "/api/tests/rpc",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
@@ -1183,7 +374,7 @@
     "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T15:17:50.633Z",
+    "timestamp": "2023-06-30T08:05:53.573Z",
     "method": "POST",
     "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
@@ -1194,18 +385,18 @@
     "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T15:19:21.815Z",
-    "method": "GET",
-    "url": "/api/tests/rpc",
+    "timestamp": "2023-06-30T08:05:53.581Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
     "stackTrace": null,
-    "responseTime": null,
+    "responseTime": 252,
     "statusCode": 200,
     "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T15:19:22.473Z",
+    "timestamp": "2023-06-30T08:05:59.793Z",
     "method": "POST",
     "url": "/api/log/to-storage",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
@@ -1216,9 +407,9 @@
     "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T15:20:56.639Z",
+    "timestamp": "2023-06-30T08:06:01.513Z",
     "method": "GET",
-    "url": "/api/tests/rpc",
+    "url": "/api/log/from-storage?fileName=server.json",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
     "stackTrace": null,
@@ -1227,86 +418,9 @@
     "responseBody": null
   },
   {
-    "timestamp": "2023-06-29T15:20:58.128Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T15:24:11.343Z",
+    "timestamp": "2023-06-30T08:06:02.746Z",
     "method": "GET",
-    "url": "/api/tests/rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T15:24:11.880Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T15:24:22.298Z",
-    "method": "POST",
-    "url": "/api/log/to-storage",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T15:24:27.996Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T15:24:29.352Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=client-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T15:24:38.888Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=server-rpc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-29T15:24:41.512Z",
-    "method": "GET",
-    "url": "/api/log/from-storage?fileName=client-rpc",
+    "url": "/api/log/from-storage?fileName=client.json",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "error": null,
     "stackTrace": null,
