@@ -26,14 +26,16 @@ export const createLogEntry = (event: H3Event) => {
 // Middleware to log API call details
 export default defineEventHandler(async (event) => {
   // stringify used because event is a circular object
-  logger.info(`Starting logging middleware for event: ${stringify(event.node.req.headers['accept-language'])}`)
+  logger.info(
+    `Starting logging middleware for event: ${stringify(event.node.req.headers['accept-language'])}`
+  )
 
   const logEntry = createLogEntry(event)
   const fileName = 'server.json'
 
   try {
     // Initiate storage
-    const storage = useStorage('data')
+    const storage = useStorage('logs')
 
     let newFile = []
     // Check if the file exists and is not empty before reading

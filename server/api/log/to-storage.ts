@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
     // Declare the log entry here and update it later as necessary
 
     // Initiate storage
-    const storage = useStorage('data')
+    const storage = useStorage('logs')
     let newFile = []
 
     // Check if the file exists and is not empty before reading

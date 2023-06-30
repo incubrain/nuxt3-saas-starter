@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   if (!fileName) return { status: 500, body: 'No fileName provided' }
 
   // Use Nitro's storage layer
-  const storage = useStorage('data')
+  const storage = useStorage('logs')
 
   try {
     logger.info(`Attempting to read file: ${fileName}`)

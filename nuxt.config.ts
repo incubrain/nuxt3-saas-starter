@@ -12,18 +12,10 @@ export default defineNuxtConfig({
     headers: false
   },
   nitro: {
-    // Production
     storage: {
-      data: {
-        driver: 'localStorage',
-        base: 'app:'
-      }
-    },
-    // Development
-    devStorage: {
-      data: {
+      logs: {
         driver: 'fs',
-        base: './data/kv'
+        base: './data/logs'
       }
     }
   },
