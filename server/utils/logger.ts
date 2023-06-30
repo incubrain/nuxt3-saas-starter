@@ -30,33 +30,31 @@ const format = winston.format.combine(
 )
 
 // Creating a logger instance
-const logDir = process.env.LOG_ENV === 'deployed' ? './logs' : './public/logs'
+const logDir = './public/logs'
 const logger = winston.createLogger({
   levels: logLevels,
-  format,
-  transports: [
-    new winston.transports.File({
-      filename: path.resolve(logDir, `${process.env.NODE_ENV}-error.log`),
-      level: 'error'
-    }),
-    new winston.transports.File({
-      filename: path.resolve(logDir, `${process.env.NODE_ENV}-combined.log`)
-    }),
-    new winston.transports.Console()
-  ]
+  format
 })
 
 // write logs to file in development
-// if (process.env.NODE_ENV === 'development') {
-//   logger.add(
-//   )
-//   logger.add(
-//   )
-// }
+if (process.env.LOG_ENV === 'development') {
+  logger.add(
+    new winston.transports.File({
+      filename: path.resolve(logDir, `${process.env.NODE_ENV}-error.log`),
+      level: 'error'
+    })
+  )
+  logger.add(
+    new winston.transports.File({
+      filename: path.resolve(logDir, `${process.env.NODE_ENV}-combined.log`)
+    })
+  )
+  logger.add(new winston.transports.Console())
+}
 
-// only write errors to console in production
-if (process.env.NODE_ENV === 'production') {
-  logger.add(new winston.transports.Console({ format: winston.format.simple(), level: 'error' }))
+// Vercel only accepts stdout and stderr, this logging will be viewable on the Vercel dashboard/logs
+if (process.env.LOG_ENV === 'deployed') {
+  logger.add(new winston.transports.Console())
 }
 
 export default logger
