@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     storage: {
       logs: {
         driver: 'fs',
-        base: './logs'
+        base: './data/logs'
       }
     }
   },
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   },
   css: ['/assets/css/tailwind.css'],
   imports: {
-    dirs: ['stores', 'data', 'utils', 'logs']
+    dirs: ['stores', 'data', 'utils']
   },
   typescript: {
     shim: false,

@@ -1,0 +1,90 @@
+[
+  {
+    "timestamp": "2023-06-30T10:48:06.257Z",
+    "method": "GET",
+    "url": "/",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T10:48:12.101Z",
+    "method": "POST",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T10:48:28.674Z",
+    "method": "GET",
+    "url": "/tests/api",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T10:48:31.651Z",
+    "method": "POST",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T10:48:34.633Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T10:49:33.672Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T10:58:35.265Z",
+    "method": "GET",
+    "url": "/tests/api",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T10:58:40.337Z",
+    "method": "POST",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": null,
+    "statusCode": 200,
+    "responseBody": null
+  }
+]

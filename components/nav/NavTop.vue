@@ -57,8 +57,6 @@ const user = useSupabaseUser()
 
 const isAppRoute = computed(() => route.path.includes('/app'))
 
-console.log('isAppRoute', route, isAppRoute)
-
 // const { logout, session } = useAuth()
 
 // const { error, session: currentSession } = await session.getCurrent()

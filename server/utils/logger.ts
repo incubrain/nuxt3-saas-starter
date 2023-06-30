@@ -1,6 +1,6 @@
 import * as path from 'path'
-import * as fs from 'fs'
 import * as winston from 'winston'
+import Sentry from 'winston-transport-sentry-node'
 
 const logLevels = {
   error: 0,
@@ -30,33 +30,40 @@ const format = winston.format.combine(
   winston.format.printf((info) => `${info.timestamp} ${info.level}: ${info.message}`)
 )
 
-// Create the log directory if it does not exist
-const logDir = './logs'
-if (!fs.existsSync(logDir)) {
-  fs.mkdirSync(logDir)
-}
-
 // Creating a logger instance
 const logger = winston.createLogger({
   levels: logLevels,
-  format,
-  transports: [
-    new winston.transports.Console(),
+  format
+})
+
+// write logs to file in development
+const logDir = './data/logs'
+if (process.env.NODE_ENV === 'development') {
+  logger.add(
     new winston.transports.File({
       filename: path.resolve(logDir, `${process.env.NODE_ENV}-error.log`),
       level: 'error'
-    }),
+    })
+  )
+  logger.add(
     new winston.transports.File({
       filename: path.resolve(logDir, `${process.env.NODE_ENV}-combined.log`)
     })
-  ]
-})
+  )
+  logger.add(new winston.transports.Console())
+}
 
-// If we're not in production then log to the `console`
-// if (process.env.NODE_ENV !== 'production') {
-//   logger.add(new winston.transports.Console({
-//     format: winston.format.simple(),
-//   }))
-// }
+// send logs to sentry in production
+if (process.env.NODE_ENV === 'production') {
+  logger.add(new winston.transports.Console({ format: winston.format.simple(), level: 'error' }))
+  logger.add(
+    new Sentry({
+      sentry: {
+        dsn: process.env.SENTRY_DSN
+      },
+      level: 'info'
+    })
+  )
+}
 
 export default logger
