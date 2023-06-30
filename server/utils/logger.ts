@@ -30,7 +30,7 @@ const format = winston.format.combine(
 )
 
 // Creating a logger instance
-const logDir = './public/logs'
+const logDir = process.env.LOG_ENV === 'deployed' ? './logs' : './public/logs'
 const logger = winston.createLogger({
   levels: logLevels,
   format,
