@@ -36,7 +36,7 @@ const logger = winston.createLogger({
 })
 
 // write logs to file in development
-const logDir = './data/logs'
+const logDir = './public/logs'
 if (process.env.NODE_ENV === 'development') {
   logger.add(
     new winston.transports.File({
