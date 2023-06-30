@@ -1,4 +1,5 @@
 import * as path from 'path'
+import * as fs from 'fs'
 import * as winston from 'winston'
 
 const logLevels = {
@@ -29,6 +30,12 @@ const format = winston.format.combine(
   winston.format.printf((info) => `${info.timestamp} ${info.level}: ${info.message}`)
 )
 
+// Create the log directory if it does not exist
+const logDir = './logs'
+if (!fs.existsSync(logDir)) {
+  fs.mkdirSync(logDir)
+}
+
 // Creating a logger instance
 const logger = winston.createLogger({
   levels: logLevels,
@@ -36,11 +43,11 @@ const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(),
     new winston.transports.File({
-      filename: path.resolve(process.cwd(), './logs', `${process.env.NODE_ENV}-error.log`),
+      filename: path.resolve(logDir, `${process.env.NODE_ENV}-error.log`),
       level: 'error'
     }),
     new winston.transports.File({
-      filename: path.resolve(process.cwd(), './logs', `${process.env.NODE_ENV}-combined.log`)
+      filename: path.resolve(logDir, `${process.env.NODE_ENV}-combined.log`)
     })
   ]
 })
