@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   },
   css: ['/assets/css/tailwind.css'],
   imports: {
-    dirs: ['stores', 'data', 'utils']
+    dirs: ['stores', 'data', 'utils', 'logs']
   },
   typescript: {
     shim: false,

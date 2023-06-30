@@ -427,38 +427,5 @@
     "responseTime": null,
     "statusCode": 200,
     "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-30T08:18:13.089Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-30T08:18:16.236Z",
-    "method": "GET",
-    "url": "/tests/api",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
-  },
-  {
-    "timestamp": "2023-06-30T08:18:18.785Z",
-    "method": "POST",
-    "url": "/api/_supabase/session",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-    "error": null,
-    "stackTrace": null,
-    "responseTime": null,
-    "statusCode": 200,
-    "responseBody": null
   }
 ]
