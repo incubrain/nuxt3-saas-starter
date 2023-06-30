@@ -42,5 +42,27 @@
     "responseTime": 229,
     "statusCode": 200,
     "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T11:48:25.645Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 653,
+    "statusCode": 200,
+    "responseBody": null
+  },
+  {
+    "timestamp": "2023-06-30T11:56:17.816Z",
+    "method": "POST",
+    "url": "/api/log/to-storage",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "stackTrace": null,
+    "responseTime": 485,
+    "statusCode": 200,
+    "responseBody": null
   }
 ]

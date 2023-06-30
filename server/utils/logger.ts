@@ -30,27 +30,29 @@ const format = winston.format.combine(
 )
 
 // Creating a logger instance
+const logDir = './public/logs'
 const logger = winston.createLogger({
   levels: logLevels,
-  format
-})
-
-// write logs to file in development
-const logDir = './public/logs'
-if (process.env.NODE_ENV === 'development') {
-  logger.add(
+  format,
+  transports: [
     new winston.transports.File({
       filename: path.resolve(logDir, `${process.env.NODE_ENV}-error.log`),
       level: 'error'
-    })
-  )
-  logger.add(
+    }),
     new winston.transports.File({
       filename: path.resolve(logDir, `${process.env.NODE_ENV}-combined.log`)
-    })
-  )
-  logger.add(new winston.transports.Console())
-}
+    }),
+    new winston.transports.Console()
+  ]
+})
+
+// write logs to file in development
+// if (process.env.NODE_ENV === 'development') {
+//   logger.add(
+//   )
+//   logger.add(
+//   )
+// }
 
 // only write errors to console in production
 if (process.env.NODE_ENV === 'production') {
