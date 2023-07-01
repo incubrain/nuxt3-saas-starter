@@ -14,10 +14,16 @@ export default defineNuxtConfig({
   nitro: {
     storage: {
       logs: {
+        driver: 'vercelKV',
+        base: 'incubrain:logs'
+      }
+    },
+    devStorage: {
+      logs: {
         driver: 'fs',
         base: './public/logs'
       }
-    }
+    },
   },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },

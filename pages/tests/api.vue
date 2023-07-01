@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-const serverFile = 'server.json'
+const serverFile = process.env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
 const clientFile = 'client.json'
 
 const nuxtServerLoggedData = ref([])
@@ -44,38 +44,15 @@ const getNuxtClientLoggedData = async () => {
 }
 
 const testNuxtServer = async () => {
-  const start = Date.now()
   const { data, error } = await useFetch('/api/tests/rpc')
-  const end = Date.now()
-  console.log('data', data, error)
-
-  // Log API call
-  const logData = {
-    fileName: serverFile,
-    data: {
-      duration: end - start
-    }
+  if (error.value !== null) {
+    console.error('error', error)
   }
-  await useFetch('/api/log/to-storage', { method: 'POST', body: logData })
 }
 
 const testNuxtClient = async () => {
-  const start = Date.now()
   const users = useUsers()
   await users.getManyUsers()
-  const end = Date.now()
-
-  // Log API call
-  const logData = {
-    fileName: clientFile,
-    data: {
-      duration: end - start
-    }
-  }
-  await useFetch('/api/log/to-storage', {
-    method: 'POST',
-    body: logData
-  })
 }
 </script>
 

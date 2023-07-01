@@ -1,70 +1,127 @@
 import { H3Event } from 'h3'
-import { stringify } from 'flatted'
+import { z } from 'zod'
+
+const KV_BATCH_SIZE = process.env.LOG_ENV === 'development' ? 3 : 10
+const DB_BATCH_SIZE = 30
+const fileName = process.env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
+
+const logObject = z.object({
+  timestamp: z.string(),
+  method: z.string(),
+  path: z.string(),
+  params: z.object({}),
+  sessions: z.object({}),
+  url: z.string(),
+  clientIP: z.string(),
+  userAgent: z.string(),
+  referer: z.string(),
+  origin: z.string(),
+  error: z.string().nullable(),
+  stackTrace: z.string().optional(),
+  responseTime: z.number().nullable(),
+  statusCode: z.number(),
+  startTime: z.number()
+})
+
+type LogType = z.infer<typeof logObject>
 
 export const createLogEntry = (event: H3Event) => {
   const {
-    node: { req }
+    node: { req, res },
+    path,
+    context: { sessions, params }
   } = event
-  const logEntry = {
+  const startTime = Date.now()
+
+  return {
     timestamp: new Date().toISOString(),
     method: req.method,
+    path,
+    params,
+    sessions,
     url: req.url,
     clientIP: req.socket.remoteAddress,
     userAgent: req.headers['user-agent'],
-    error: null,
-    stackTrace: null,
-    responseTime: null,
-    statusCode: 200,
-    responseBody: null
-  }
-
-  logger.info(`Log entry created for request: ${logEntry.method} ${logEntry.url}`)
-
-  return logEntry
+    referer: req.headers.referer,
+    origin: req.headers.origin,
+    error: null as string | null,
+    stackTrace: undefined as string | undefined,
+    responseTime: null as number | null,
+    statusCode: res.statusCode,
+    startTime
+  } as LogType
 }
 
-// Middleware to log API call details
-export default defineEventHandler(async (event) => {
-  // stringify used because event is a circular object
-  logger.info(
-    `Starting logging middleware for event: ${stringify(event.node.req.headers['accept-language'])}`
-  )
-
-  const logEntry = createLogEntry(event)
-  const fileName = 'server.json'
-
+const sendLogsToDb = (logs: any[]) => {
   try {
-    // Initiate storage
-    const storage = useStorage('logs')
+    logger.info(`Sending ${logs.length} logs to DB`)
+    // const db = useDatabase()
+    // const collection = db.collection('logs')
+    // await collection.insertMany(logs)
+  } catch (err: any) {
+    logger.error(`Error sending logs to DB: ${err.message}`)
+  }
+}
 
-    let newFile = []
-    // Check if the file exists and is not empty before reading
-    const hasItem = await storage.hasItem(fileName)
-    if (hasItem) {
-      logger.info(`Log file "${fileName}" exists. Reading data.`)
-      const fileData = await storage.getItem(fileName)
-      newFile = fileData
-    } else {
-      logger.info(`Log file "${fileName}" does not exist. Creating new file.`)
+const storeInKv = async (logs: any[]) => {
+  try {
+    const storage = useStorage('logs')
+    await storage.setItem(fileName, JSON.stringify(logs, null, 2))
+  } catch (err: any) {
+    logger.error(`Error storing logs in KV: ${err.message}`)
+  }
+}
+
+const storeBatchedLogs = async (logs: any[]) => {
+  try {
+    logger.info(`storing ${logs.length} batched logs`)
+    const storage = useStorage('logs')
+    let length = logs.length
+
+    if (await storage.hasItem(fileName)) {
+      logger.info('get old logs from kv')
+      const oldLogs = (await storage.getItem<LogType[]>(fileName)) || []
+      logs = [...oldLogs, ...logs]
+      length = logs.length
     }
 
-    // Append log entry to JSON array
-    newFile.push(logEntry)
-    logger.info('Log entry added to file data.')
-
-    // Save the updated log data
-    await storage.setItem(fileName, JSON.stringify(newFile, null, 2))
-    logger.info(
-      `Successfully logged request data for ${logEntry.method} ${logEntry.url} at ${logEntry.timestamp}`
-    )
+    if (length >= DB_BATCH_SIZE) {
+      logger.info('storing logs in db')
+      sendLogsToDb(logs)
+      await storage.removeItem(fileName)
+    } else {
+      logger.info('store logs in kv')
+      await storeInKv(logs)
+    }
   } catch (err: any) {
-    // Update log entry with error details
+    logger.error(`Error sending logs batch: ${err.message}`)
+  }
+}
+
+let batchedLogs: LogType[] = []
+export default defineEventHandler((event) => {
+  const { req, res } = event.node
+  logger.info(`create log: ${req.url}`)
+  const logEntry = createLogEntry(event)
+  const startTime = logEntry.startTime
+
+  // Handle errors
+  req.on('error', (err) => {
     logEntry.error = err.message
     logEntry.stackTrace = err.stack
+  })
 
-    // Print error details
-    logger.error(
-      `Error handling API call data: ${err.message}. Stack trace: ${logEntry.stackTrace}`
-    )
-  }
+  // Handle response
+  res.on('finish', async () => {
+    const endTime = Date.now()
+    const responseTime = endTime - startTime
+    logger.info(`Request finished: ${responseTime}ms`)
+    // Update logEntry with the responseTime
+    logEntry.responseTime = responseTime
+    batchedLogs.push(logEntry)
+    if (batchedLogs.length >= KV_BATCH_SIZE) {
+      await storeBatchedLogs(batchedLogs)
+      batchedLogs = []
+    }
+  })
 })
