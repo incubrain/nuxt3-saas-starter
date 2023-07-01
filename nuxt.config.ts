@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     storage: {
       logs: {
         driver: 'vercelKV',
-        base: 'incubrain:logs'
+        base: 'incubrain'
       }
     },
     devStorage: {
