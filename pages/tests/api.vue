@@ -28,7 +28,7 @@ const nuxtClientLoggedData = ref([])
 
 const getNuxtServerLoggedData = async () => {
   console.log('fileName:', serverFile)
-  const { data, error } = await useFetch('/api/log/from-storage', { params: { fileName: serverFile } })
+  const { data, error } = await useFetch(`/api/storage/get/${serverFile}`)
   console.log('data', data)
   if (error.value !== null) {
     console.log('error', error)
@@ -39,7 +39,7 @@ const getNuxtServerLoggedData = async () => {
 
 const testAsync = async () => {
   console.log('fileName:', serverFile)
-  const { data, error, status, pending } = await useAsyncData('test', () => $fetch('/api/log/from-storage', { params: { fileName: serverFile } }))
+  const { data, error, status, pending } = await useAsyncData('test', () => $fetch(`/api/storage/get/${serverFile}`))
   console.log('data', data, status, pending)
   if (error.value !== null) {
     console.log('error', error)
@@ -49,7 +49,7 @@ const testAsync = async () => {
 }
 
 const getNuxtClientLoggedData = async () => {
-  const { data, error } = await useFetch('/api/log/from-storage?fileName=' + clientFile)
+  const { data, error } = await useFetch(`/api/storage/get/${clientFile}`)
   if (error.value !== null) {
     console.log('error', error)
     return
