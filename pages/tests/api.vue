@@ -3,7 +3,8 @@
     <div class="flex gap-8">
       <UButton @click="testNuxtServer"> Test Server</UButton>
       <UButton @click="testNuxtClient"> Test Client</UButton>
-      <UButton @click="getNuxtServerLoggedData"> Get Server</UButton>
+      <UButton @click="getNuxtServerLoggedData"> Test useFetch</UButton>
+      <UButton @click="getNuxtServerLoggedData"> Test useAsyncData</UButton>
       <UButton @click="getNuxtClientLoggedData"> Get Client</UButton>
     </div>
     <div class="grid grid-cols-2 gap-4">
@@ -27,8 +28,19 @@ const nuxtClientLoggedData = ref([])
 
 const getNuxtServerLoggedData = async () => {
   console.log('fileName:', serverFile)
-  const { data, error } = await useFetch('/api/log/from-storage?fileName=' + serverFile)
-  console.log('data', data, error)
+  const { data, error } = await useFetch('/api/log/from-storage', { params: { fileName: serverFile } })
+  console.log('data', data)
+  if (error.value !== null) {
+    console.log('error', error)
+    return
+  }
+  nuxtServerLoggedData.value = data.value.body
+}
+
+const testAsync = async () => {
+  console.log('fileName:', serverFile)
+  const { data, error, status, pending } = await useAsyncData('test', () => $fetch('/api/log/from-storage', { params: { fileName: serverFile } }))
+  console.log('data', data, status, pending)
   if (error.value !== null) {
     console.log('error', error)
     return
