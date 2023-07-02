@@ -5,6 +5,7 @@
       <UButton @click="testNuxtClient"> Test Client</UButton>
       <UButton @click="getNuxtServerLoggedData"> Test useFetch</UButton>
       <UButton @click="testAsync"> Test useAsyncData</UButton>
+      <UButton @click="testParams"> Test API with Params</UButton>
       <UButton @click="getNuxtClientLoggedData"> Get Client</UButton>
     </div>
     <div class="grid grid-cols-2 gap-4">
@@ -46,6 +47,20 @@ const testAsync = async () => {
     return
   }
   nuxtServerLoggedData.value = data.value.body
+}
+
+const testParams = async () => {
+  const { data, error } = await useFetch('/api/tests/params?name=Drew', {
+    method: 'POST',
+    body: {
+      name: 'test',
+      age: 20
+    }
+  })
+  console.log('testParams', data)
+  if (error.value !== null) {
+    console.log('error', error)
+  }
 }
 
 const getNuxtClientLoggedData = async () => {

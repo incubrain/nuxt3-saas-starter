@@ -2,6 +2,10 @@ import { H3Event } from 'h3'
 import { Storage, StorageValue } from 'unstorage'
 import { z } from 'zod'
 
+const KV_BATCH_SIZE = process.env.LOG_ENV === 'development' ? 1 : 20
+const fileName = process.env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
+const DB_BATCH_SIZE = 500
+
 const logObject = z.object({
   timestamp: z.string(),
   method: z.string(),
@@ -77,7 +81,6 @@ const storeInKv = async ({
 }
 
 const storeBatchedLogs = async (fileName: string, logs: any[]) => {
-  const DB_BATCH_SIZE = 30
   try {
     logger.info(`storing ${logs.length} batched logs`)
     const storage = useStorage('logs')
@@ -105,11 +108,8 @@ const storeBatchedLogs = async (fileName: string, logs: any[]) => {
 
 let batchedLogs: LogType[] = []
 export default defineEventHandler((event) => {
-  const env = useRuntimeConfig().public
-  const KV_BATCH_SIZE = env.LOG_ENV === 'development' ? 3 : 5
-  const fileName = env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
   const { req, res } = event.node
-  logger.info(`create log: ${env.LOG_ENV}, ${KV_BATCH_SIZE}`)
+  logger.info(`create log: ${process.env.LOG_ENV}, ${KV_BATCH_SIZE}`)
   const logEntry = createLogEntry(event)
   const startTime = logEntry.startTime
 
