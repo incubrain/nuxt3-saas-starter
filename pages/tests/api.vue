@@ -4,7 +4,7 @@
       <UButton @click="testNuxtServer"> Test Server</UButton>
       <UButton @click="testNuxtClient"> Test Client</UButton>
       <UButton @click="getNuxtServerLoggedData"> Test useFetch</UButton>
-      <UButton @click="getNuxtServerLoggedData"> Test useAsyncData</UButton>
+      <UButton @click="testAsync"> Test useAsyncData</UButton>
       <UButton @click="getNuxtClientLoggedData"> Get Client</UButton>
     </div>
     <div class="grid grid-cols-2 gap-4">
