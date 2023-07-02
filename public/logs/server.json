@@ -218,5 +218,42 @@
     "responseTime": 2,
     "statusCode": 200,
     "startTime": 1688286948882
+  },
+  {
+    "timestamp": "2023-07-02T08:47:28.674Z",
+    "method": "GET",
+    "path": "/tests/api",
+    "url": "/tests/api",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/tests/api",
+    "error": null,
+    "responseTime": 2126,
+    "statusCode": 200,
+    "startTime": 1688287648674
+  },
+  {
+    "timestamp": "2023-07-02T08:47:32.132Z",
+    "method": "POST",
+    "path": "/api/_supabase/session",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/tests/api",
+    "origin": "http://localhost:3000",
+    "error": null,
+    "responseTime": 4,
+    "statusCode": 200,
+    "startTime": 1688287652132
+  },
+  {
+    "timestamp": "2023-07-02T08:48:13.035Z",
+    "method": "GET",
+    "path": "/api/log/from-storage?fileName=server.json",
+    "url": "/api/log/from-storage?fileName=server.json",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/tests/api",
+    "error": null,
+    "responseTime": 7,
+    "statusCode": 200,
+    "startTime": 1688287693035
   }
 ]

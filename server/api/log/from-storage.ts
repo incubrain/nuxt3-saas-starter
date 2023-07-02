@@ -1,7 +1,7 @@
 export default defineEventHandler(async (event) => {
   // get the query parameters
-  const fileName = getRequestURL(event).searchParams.get('fileName')
-  logger.info(`fileName: ${fileName}, event: ${event.context.params}`)
+  const fileName = event.context.params?.fileName || null
+  logger.info(`fileName: ${fileName}`)
   if (!fileName) return { status: 500, body: 'No fileName provided' }
 
   // Use Nitro's storage layer
