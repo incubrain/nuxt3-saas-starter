@@ -10,6 +10,7 @@
     </AppBody>
     <NavMobi class="flex lg:hidden" />
     <UNotifications />
+    <LogsPopover />
   </div>
 </template>
 

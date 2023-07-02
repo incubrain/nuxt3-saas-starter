@@ -17,6 +17,7 @@
         />
       </div>
     </AppBody>
+    <LogsPopover />
   </div>
 </template>
 

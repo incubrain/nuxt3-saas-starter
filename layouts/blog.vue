@@ -7,12 +7,11 @@
       <div class="col-start-3 w-full h-full foreground hidden md:flex" />
     </AppBody>
     <NavMobi class="flex md:hidden" />
+    <LogsPopover />
   </div>
 </template>
 
 <script setup lang="ts">
-const params = useRoute().params
-const category = computed(() => String(params.category))
 </script>
 
 <style></style>

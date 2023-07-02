@@ -5,6 +5,7 @@
       <slot />
     </AppBody>
     <NavMobi class="flex md:hidden" />
+    <LogsPopover />
   </div>
 </template>
 

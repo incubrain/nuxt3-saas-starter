@@ -40,7 +40,6 @@ export const createLogEntry = (event: H3Event) => {
     path,
     params,
     sessions,
-    url: req.url,
     clientIP: req.socket.remoteAddress,
     userAgent: req.headers['user-agent'],
     referer: req.headers.referer,
