@@ -26,6 +26,7 @@ const nuxtServerLoggedData = ref([])
 const nuxtClientLoggedData = ref([])
 
 const getNuxtServerLoggedData = async () => {
+  console.log('fileName:', serverFile)
   const { data, error } = await useFetch('/api/log/from-storage?fileName=' + serverFile)
   console.log('data', data, error)
   if (error.value !== null) {

@@ -109,7 +109,7 @@ export default defineEventHandler((event) => {
   const KV_BATCH_SIZE = env.LOG_ENV === 'development' ? 3 : 5
   const fileName = env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
   const { req, res } = event.node
-  logger.info(`create log: ${req.url}`)
+  logger.info(`create log: ${env.LOG_ENV}, ${KV_BATCH_SIZE}`)
   const logEntry = createLogEntry(event)
   const startTime = logEntry.startTime
 
