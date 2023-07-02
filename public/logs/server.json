@@ -1,0 +1,111 @@
+[
+  {
+    "timestamp": "2023-07-02T04:46:35.057Z",
+    "method": "GET",
+    "path": "/",
+    "url": "/",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/",
+    "error": null,
+    "responseTime": 3160,
+    "statusCode": 200,
+    "startTime": 1688273195057
+  },
+  {
+    "timestamp": "2023-07-02T04:46:38.239Z",
+    "method": "GET",
+    "path": "/",
+    "url": "/",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/",
+    "error": null,
+    "responseTime": 24,
+    "statusCode": 200,
+    "startTime": 1688273198239
+  },
+  {
+    "timestamp": "2023-07-02T04:46:39.250Z",
+    "method": "POST",
+    "path": "/api/_supabase/session",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/",
+    "origin": "http://localhost:3000",
+    "error": null,
+    "responseTime": 3,
+    "statusCode": 200,
+    "startTime": 1688273199250
+  },
+  {
+    "timestamp": "2023-07-02T06:51:59.789Z",
+    "method": "GET",
+    "path": "/",
+    "url": "/",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "responseTime": 1424,
+    "statusCode": 200,
+    "startTime": 1688280719789
+  },
+  {
+    "timestamp": "2023-07-02T06:52:01.901Z",
+    "method": "POST",
+    "path": "/api/_supabase/session",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/",
+    "origin": "http://localhost:3000",
+    "error": null,
+    "responseTime": 3,
+    "statusCode": 200,
+    "startTime": 1688280721901
+  },
+  {
+    "timestamp": "2023-07-02T06:52:13.531Z",
+    "method": "GET",
+    "path": "/app/admin",
+    "url": "/app/admin",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "error": null,
+    "responseTime": 14,
+    "statusCode": 200,
+    "startTime": 1688280733531
+  },
+  {
+    "timestamp": "2023-07-02T08:01:14.458Z",
+    "method": "GET",
+    "path": "/app",
+    "url": "/app",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/app",
+    "error": null,
+    "responseTime": 58,
+    "statusCode": 200,
+    "startTime": 1688284874458
+  },
+  {
+    "timestamp": "2023-07-02T08:01:14.561Z",
+    "method": "GET",
+    "path": "/app",
+    "url": "/app",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/app",
+    "error": null,
+    "responseTime": 3,
+    "statusCode": 200,
+    "startTime": 1688284874561
+  },
+  {
+    "timestamp": "2023-07-02T08:01:15.524Z",
+    "method": "POST",
+    "path": "/api/_supabase/session",
+    "url": "/api/_supabase/session",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "referer": "http://localhost:3000/app",
+    "origin": "http://localhost:3000",
+    "error": null,
+    "responseTime": 4,
+    "statusCode": 200,
+    "startTime": 1688284875524
+  }
+]

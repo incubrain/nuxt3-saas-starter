@@ -1,7 +1,7 @@
 import { H3Event } from 'h3'
 import { z } from 'zod'
 
-const KV_BATCH_SIZE = process.env.LOG_ENV === 'development' ? 3 : 10
+const KV_BATCH_SIZE = process.env.LOG_ENV === 'development' ? 3 : 5
 const DB_BATCH_SIZE = 30
 const fileName = process.env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
 
