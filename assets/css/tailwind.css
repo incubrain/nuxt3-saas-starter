@@ -7,10 +7,10 @@
 
 @layer base {
   :root {
-    --nav-h-mobi: 40px;
-    --nav-h-sm: 46px;
-    --nav-h-md: 50px;
-    --nav-h-lg: 60px;
+    --nav-height-mobi: 40px;
+    --nav-height-sm: 46px;
+    --nav-height-md: 50px;
+    --nav-height-lg: 60px;
 
     --max-w-sm: 600px;
     --max-w-md: 900px;

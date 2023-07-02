@@ -1,11 +1,7 @@
 <template>
   <div
     ref="scrollContainer"
-    :class="
-      hasNavs
-        ? 'w-full relative overflow-y-scroll h-[calc(100vh-calc(var(--nav-h-sm)+var(--nav-h-mobi)))] md:h-[calc(100vh-var(--nav-h-md))] lg:h-[calc(100vh-var(--nav-h-lg))] min-h-[calc(100vh-calc(var(--nav-h-sm)+var(--nav-h-mobi)))] md:min-h-[calc(100vh-var(--nav-h-md))] lg:min-h-[calc(100vh-var(--nav-h-lg))]'
-        : 'w-full relative overflow-y-scroll h-full'
-    "
+    class="w-full h-[calc(100vh-var(--nav-height-sm)-var(--nav-height-mobi))] md:h-[calc(100vh-var(--nav-height-md))] lg:h-[calc(100vh-var(--nav-height-lg))] relative overflow-y-scroll"
   >
     <slot />
   </div>
