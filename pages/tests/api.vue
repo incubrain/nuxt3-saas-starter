@@ -18,7 +18,8 @@
 </template>
 
 <script setup lang="ts">
-const serverFile = process.env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
+const env = useRuntimeConfig().public
+const serverFile = env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
 const clientFile = 'client.json'
 
 const nuxtServerLoggedData = ref([])

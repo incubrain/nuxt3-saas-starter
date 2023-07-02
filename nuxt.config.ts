@@ -94,7 +94,8 @@ export default defineNuxtConfig({
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
       SUPABASE_URL: process.env.SUPABASE_URL,
-      SUPABASE_KEY: process.env.SUPABASE_KEY
+      SUPABASE_KEY: process.env.SUPABASE_KEY,
+      LOG_ENV: process.env.LOG_ENV
     },
     // The private keys which are only available within server-side
     SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_KEY

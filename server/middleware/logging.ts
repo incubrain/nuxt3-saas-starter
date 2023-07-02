@@ -1,9 +1,6 @@
 import { H3Event } from 'h3'
+import { Storage, StorageValue } from 'unstorage'
 import { z } from 'zod'
-
-const KV_BATCH_SIZE = process.env.LOG_ENV === 'development' ? 3 : 5
-const DB_BATCH_SIZE = 30
-const fileName = process.env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
 
 const logObject = z.object({
   timestamp: z.string(),
@@ -63,16 +60,24 @@ const sendLogsToDb = (logs: any[]) => {
   }
 }
 
-const storeInKv = async (logs: any[]) => {
+const storeInKv = async ({
+  fileName,
+  storage,
+  data
+}: {
+  fileName: string
+  storage: Storage<StorageValue>
+  data: any[]
+}) => {
   try {
-    const storage = useStorage('logs')
-    await storage.setItem(fileName, JSON.stringify(logs, null, 2))
+    await storage.setItem(fileName, JSON.stringify(data, null, 2))
   } catch (err: any) {
     logger.error(`Error storing logs in KV: ${err.message}`)
   }
 }
 
-const storeBatchedLogs = async (logs: any[]) => {
+const storeBatchedLogs = async (fileName: string, logs: any[]) => {
+  const DB_BATCH_SIZE = 30
   try {
     logger.info(`storing ${logs.length} batched logs`)
     const storage = useStorage('logs')
@@ -91,7 +96,7 @@ const storeBatchedLogs = async (logs: any[]) => {
       await storage.removeItem(fileName)
     } else {
       logger.info('store logs in kv')
-      await storeInKv(logs)
+      await storeInKv({ fileName, storage, data: logs })
     }
   } catch (err: any) {
     logger.error(`Error sending logs batch: ${err.message}`)
@@ -100,6 +105,9 @@ const storeBatchedLogs = async (logs: any[]) => {
 
 let batchedLogs: LogType[] = []
 export default defineEventHandler((event) => {
+  const env = useRuntimeConfig().public
+  const KV_BATCH_SIZE = env.LOG_ENV === 'development' ? 3 : 5
+  const fileName = env.LOG_ENV === 'development' ? 'server.json' : 'log-batch'
   const { req, res } = event.node
   logger.info(`create log: ${req.url}`)
   const logEntry = createLogEntry(event)
@@ -120,7 +128,7 @@ export default defineEventHandler((event) => {
     logEntry.responseTime = responseTime
     batchedLogs.push(logEntry)
     if (batchedLogs.length >= KV_BATCH_SIZE) {
-      await storeBatchedLogs(batchedLogs)
+      await storeBatchedLogs(fileName, batchedLogs)
       batchedLogs = []
     }
   })
