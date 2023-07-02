@@ -95,7 +95,7 @@ const storeBatchedLogs = async (fileName: string, logs: any[]) => {
     if (length >= DB_BATCH_SIZE) {
       logger.info('storing logs in db')
       sendLogsToDb(logs)
-      await storage.removeItem(fileName)
+      // await storage.removeItem(fileName)
     } else {
       logger.info('store logs in kv')
       await storeInKv({ fileName, storage, data: logs })
