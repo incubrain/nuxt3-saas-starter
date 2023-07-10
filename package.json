@@ -42,7 +42,7 @@
     "typescript": "^5.1.6",
     "vee-validate": "^4.10.2",
     "vitest": "^0.32.2",
-    "vue-tsc": "^1.8.1",
+    "vue-tsc": "^1.8.4",
     "zod": "^3.21.4"
   },
   "dependencies": {
