@@ -36,7 +36,7 @@
     "eslint-plugin-vue": "^9.15.1",
     "flatted": "^3.2.7",
     "libphonenumber-js": "^1.10.37",
-    "nuxt": "^3.5.3",
+    "nuxt": "^3.6.3",
     "nuxt-security": "^0.13.0",
     "nuxt-simple-sitemap": "^2.6.2",
     "typescript": "^5.1.6",
