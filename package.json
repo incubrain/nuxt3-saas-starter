@@ -50,7 +50,7 @@
     "@vercel/kv": "^0.2.2",
     "drizzle-orm": "^0.27.2",
     "postgres": "^3.3.5",
-    "winston": "^3.9.0"
+    "winston": "^3.10.0"
   },
   "headwind.classRegex": {
     "typescriptvue": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)"
