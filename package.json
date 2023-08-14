@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "^5.60.1",
     "@unlighthouse/nuxt": "^0.9.0",
     "eslint": "^8.45.0",
-    "eslint-plugin-vue": "^9.15.1",
+    "eslint-plugin-vue": "^9.17.0",
     "flatted": "^3.2.7",
     "libphonenumber-js": "^1.10.37",
     "nuxt": "^3.6.3",
