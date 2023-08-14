@@ -26,7 +26,7 @@
     "@nuxtjs/supabase": "^0.3.8",
     "@pinia/nuxt": "^0.4.11",
     "@sentry/tracing": "^7.60.0",
-    "@sentry/vue": "^7.58.1",
+    "@sentry/vue": "^7.64.0",
     "@sentry/webpack-plugin": "^2.4.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
